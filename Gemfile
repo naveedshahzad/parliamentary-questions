@@ -50,5 +50,4 @@ group :test, :development do
   gem 'shoulda-matchers', require: false
   gem 'timecop'
   gem "brakeman", :require => false
-  gem 'rspec'
 end
