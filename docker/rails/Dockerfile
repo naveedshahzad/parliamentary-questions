@@ -1,28 +1,42 @@
-FROM moj-ruby:latest
+FROM ministryofjustice/ruby:2-webapp-onbuild
 
-# Set correct environment variables.
-ENV HOME /root
 ENV APP_HOME /rails
 
-# Use baseimage-docker's init process.
-CMD ["/sbin/my_init"]
-
 ADD ./ /rails
-# set WORKDIR
-WORKDIR /rails
+ADD ./docker/run.sh $APP_HOME/run.sh
+RUN chmod 777 $APP_HOME/run.sh
+WORKDIR $APPHOME
 
-# Publish port 80
 EXPOSE 80
 
-ADD docker/rails/logstash.service /etc/service/logstash/run
-RUN chmod +x /etc/service/logstash/run
+#SECRET_TOKEN set here because otherwise devise blows up during the precompile.
+RUN bundle exec rake assets:precompile RAILS_ENV=production SECRET_KEY_BASE=a-real-secret-key-is-not-needed-here
 
-ADD docker/rails/logstash-conf.sh /etc/logstash-conf.sh
+CMD $APP_HOME/run.sh
 
-# ...put your own build instructions here...
-# install service files for runit
-ADD docker/rails/unicorn.service /etc/service/unicorn/run
+# # Set correct environment variables.
+# ENV HOME /root
+# ENV APP_HOME /rails
 
-# The way this base image handles envvars is pretty strange
-COPY docker/app_env_vars /etc/container_environment/
+# # Use baseimage-docker's init process.
+# CMD ["/sbin/my_init"]
+
+# ADD ./ /rails
+# # set WORKDIR
+# WORKDIR /rails
+
+# # Publish port 80
+# EXPOSE 80
+
+# ADD docker/rails/logstash.service /etc/service/logstash/run
+# RUN chmod +x /etc/service/logstash/run
+
+# ADD docker/rails/logstash-conf.sh /etc/logstash-conf.sh
+
+# # ...put your own build instructions here...
+# # install service files for runit
+# ADD docker/rails/unicorn.service /etc/service/unicorn/run
+
+# # The way this base image handles envvars is pretty strange
+# COPY docker/app_env_vars /etc/container_environment/
 
