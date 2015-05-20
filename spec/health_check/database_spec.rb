@@ -31,9 +31,7 @@ describe HealthCheck::Database do
       allow(ActiveRecord::Base).to receive(:connected?).and_return(false)
       db.available?
 
-      expect(db.error_messages).to match [
-        /Database Error: could not connect to (\w+) on (\w+) using postgresql/
-      ]
+      expect(db.error_messages).to match (/Database Error: could not connect to (\S+) on (\S+) using postgresql/)
     end
 
     it 'returns an error an backtrace for errors not specific to a component' do
