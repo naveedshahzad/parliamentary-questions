@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150507095914) do
+ActiveRecord::Schema.define(version: 20150519100413) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -304,7 +304,11 @@ ActiveRecord::Schema.define(version: 20150507095914) do
     t.string   "entity"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "acknowledged"
+    t.datetime "ack_time"
   end
+
+  add_index "tokens", ["entity"], name: "index_tokens_on_entity", unique: true, using: :btree
 
   create_table "trim_links", force: true do |t|
     t.string   "filename"

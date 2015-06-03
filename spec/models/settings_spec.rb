@@ -24,6 +24,12 @@ describe Settings do
   end
 
   context 'settings file values' do
+    describe '.live_url' do
+      it 'should return the value from the file' do
+        expect(Settings.live_url).to eq 'https://trackparliamentaryquestions.service.gov.uk'
+      end
+    end
+
     describe '.mail_from' do
       it 'should return the value from the file' do
         expect(Settings.mail_from).to eq 'PQ Team <no-reply@trackparliamentaryquestions.service.gov.uk>'
@@ -67,6 +73,12 @@ describe Settings do
         expect(Settings.excepted_from_ssl).to eq ['ping.json']
       end
     end
+
+    describe '.key_metric_threshold' do
+      it 'should return the value from the file' do
+        expect(Settings.key_metric_threshold).to eq 0.5
+      end
+    end
   end
 
   context 'MailWorker' do
@@ -93,7 +105,7 @@ describe Settings do
     it 'should return the values in the file' do
       expect(Settings.gecko_warning_levels.num_emails_waiting).to eq 15
       expect(Settings.gecko_warning_levels.num_emails_abandoned).to eq 1
-      expect(Settings.gecko_warning_levels.num_unanswered_tokens).to eq 25
+      expect(Settings.gecko_warning_levels.pctg_answered_tokens).to eq 50
     end
   end
 

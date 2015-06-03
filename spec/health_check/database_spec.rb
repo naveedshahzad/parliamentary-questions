@@ -30,7 +30,6 @@ describe HealthCheck::Database do
     it 'returns the exception messages if there is an error accessing the database' do
       allow(ActiveRecord::Base).to receive(:connected?).and_return(false)
       db.available?
-
       expect(db.error_messages.to_s).to match(/.*Database Error: could not connect to \S+ on \S+ using postgresql.*/)
     end
 

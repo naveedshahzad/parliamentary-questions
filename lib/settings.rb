@@ -36,6 +36,10 @@ module Settings
     @pq_rest_api
   end
 
+  def live_url
+    @h['live_url']
+  end
+
   def mail_from
     @h['mail_from']
   end
@@ -78,5 +82,9 @@ module Settings
 
   def smoke_test_runner
     OpenStruct.new(@h['smoke_test_runner'])
+  end
+
+  def key_metric_threshold
+    @h['key_metric_threshold']
   end
 end
