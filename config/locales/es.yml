@@ -1,363 +1,363 @@
 ---
-en:
+es:
   activerecord:
     errors:
       models:
         trim_link:
           attributes:
             filename:
-              invalid: must end with .tr5
+              invalid: debe terminar con .tr5
             data:
-              blank: file empty
+              blank: archivo vacío
   actionlist_members:
     index:
-      actionlist_members: Actionlist members
-      add_actionlist_member: Add actionlist member
-      name: Name
-      status: Status
-      edit: Edit
+      actionlist_members: miembros Actionlist
+      add_actionlist_member: Agregar miembro actionlist
+      name: Nombre
+      status: estado
+      edit: Editar
     new:
-      add_actionlist_member: Add actionlist member
-      return_to_actionlist_member: Return to actionlist member list
+      add_actionlist_member: Agregar miembro actionlist
+      return_to_actionlist_member: Volver a la lista de miembros actionlist
     edit:
-      edit_actionlist_member: Edit actionlist member
-      return_to_actionlist_member: Return to actionlist member list
+      edit_actionlist_member: Editar miembro actionlist
+      return_to_actionlist_member: Volver a la lista de miembros actionlist
     show:
-      actionlist_member_details: Actionlist member details
-      name: Name
-      email: Email
-      status: Status
-      edit: Edit
-      return_to_actionlist_member: Return to actionlist member list
+      actionlist_member_details: detalles miembro Actionlist
+      name: Nombre
+      email: Correo
+      status: estado
+      edit: Editar
+      return_to_actionlist_member: Volver a la lista de miembros actionlist
     form:
-      status: 'Status:'
-      inactive: Inactive
+      status: 'Estado:'
+      inactive: INACTIVO
   action_officers:
     form:
-      status: Status
-      inactive: Inactive
+      status: estado
+      inactive: INACTIVO
     edit:
-      edit_action_officer: Edit action officer
-      return_to_action_officer: Return to action officer list
+      edit_action_officer: Editar acción oficial
+      return_to_action_officer: Volver a la lista oficial de acción
     index:
-      action_officers: Action officers
-      add_action_officer: Add Action Officer
-      name: Name
-      division: Division
-      press_desk: Press desk
-      status: Status
-      edit: Edit
+      action_officers: iciales de acción
+      add_action_officer: agregar acción oficial
+      name: Nombre
+      division: División
+      press_desk: Oficina de Prensa
+      status: estado
+      edit: Editar
     new:
-      add_action_officer: Add action officer
-      return_to_action_officer: Return to action officer list
+      add_action_officer: agregar acción oficial
+      return_to_action_officer: Volver a la lista oficial de acción
     show:
-      action_officer_details: Action officer details
-      name: Name
-      email: Email
-      group_email: Group email
-      phone: Phone
-      deputy_director: Deputy director
-      division: Division
-      press_desk: Press desk
-      status: Status
-      edit: Edit
-      return_to_action_officer: Return to action officer list
+      action_officer_details: acción oficial detalles
+      name: Nombre
+      email: Correo
+      group_email: correo electrónico de grupo
+      phone: Teléfono
+      deputy_director: Director Adjunto
+      division: División
+      press_desk: Oficina de Prensa
+      status: estado
+      edit: Editar
+      return_to_action_officer: Volver a la lista oficial de acción
   admin:
     index:
-      settings: Settings
-      address_books: Address books
-      action_officers: Action officers
-      watch_list: Watch list
-      action_list: Action list
-      ministers: Ministers
-      deputy_directors: Deputy directors
-      press_officers: Press officers
+      settings: Ajustes
+      address_books: Direcciones
+      action_officers: oficiales de acción
+      watch_list: lista de observación
+      action_list: lista de acciones
+      ministers: Los Ministros
+      deputy_directors: Directores Adjuntos
+      press_officers: los oficiales de prensa
       early_bird_list: Early bird list
-      tasks: Tasks
-      create_a_transferred_pq: Create a transferred PQ
-      user_admin: User admin
-      users: Users
+      tasks: Tareas
+      create_a_transferred_pq: Crear una transferencia PQ
+      user_admin: Usuario administrativo
+      users: los usuarios
       directorates: Directorates
-      divisions: Divisions
-      press_desks: Press desks
-      other_government_departments: Other Government Departments
+      divisions: Divisiones
+      press_desks: escritorios de prensa
+      other_government_departments: otros Departamentos gubernamentales
   answering:
     answer_link:
-      answer_the_pq: Answer the PQ
+      answer_the_pq: Contestar la PQ
       id_answer_pq: ', :id => "answer-pq-link-%{pq_id}", '
     form:
-      there_are_errors_submitting: There are errors submitting the answer
+      there_are_errors_submitting: hay errores al enviar la respuesta
   assignment:
     confirmation:
-      thank_you_for_your: Thank you for your response
-      you_rejected_pq: You rejected PQ
-      your_message_has_been: Your message has been sent to the PQ team. You don't
-        need to take any further action.
-      you_accepted_pq: You accepted PQ
-      you_will_receive_a: You will receive a further email which explains how and
-        when to return your draft response, and provides a link to PQ guidance on
-        the intranet.
-      this_pq_has_already: This PQ has already been accepted
-      if_you_have_any: If you have any queries please
+      thank_you_for_your: Gracias por su respuesta
+      you_rejected_pq: ha rechazado PQ
+      your_message_has_been: Su mensaje ha sido enviado al equipo PQ. Usted no
+        Necesita de tomar ninguna acción adicional.
+      you_accepted_pq: Usted ha aceptado PQ
+      you_will_receive_a: Usted recibirá un correo electrónico en el que se explica cómo y
+        Al devolver el proyecto de respuesta, y proporciona un vínculo a la guía sobre PQ en
+        La intranet.
+      this_pq_has_already: Este PQ ya ha sido aceptado
+      if_you_have_any: Si usted tiene alguna pregunta por favor
     show:
-      you_have_been_allocated: You have been allocated the PQ
-      question_asked_by_question: Question asked by %{question} (%{question1}).
-      to_be_answered_on: To be answered on behalf of %{question}.
-      the_deadline_to_accept: The deadline to accept or reject this allocation is
-        2pm today
-      this_question_has_also: This question has also been allocated to the following
-        action officers, but only one person may accept responsibility.
-      will_you_take_responsibility: Will you take responsibility for drafting an answer
-        to this question?
-      accept: Accept
-      reject: Reject
-      please_select_one_of: Please select one of the reasons to reject the question
-      i_think_it_is: I think it is for another person in my team
-      i_think_it_is_1: I think it is for an Other Government Department
-      please_give_us_information: Please give us information about why you reject
-        the question
-      save_response: Save Response
-      if_you_have_any: If you have any queries please
-      the_question_has_been: The question has been accepted and an email has been
-        sent to the accepting officer with drafting instructions, please contact Parliamentary
-        branch if you have any questions
+      you_have_been_allocated: Se le ha sido asignado el PQ
+      question_asked_by_question: Preguntas de %{question} (%{question1}).
+      to_be_answered_on: Para ser respondidas en nombre de  %{question}.
+      the_deadline_to_accept: La fecha límite para aceptar o rechazar esta asignación es
+        2pm del día de hoy
+      this_question_has_also: Esta pregunta también ha sido asignada a la the siguiente
+        Medidas oficiales, pero sólo una persona puede aceptar la responsabilidad.
+      will_you_take_responsibility: Se debe asumir la responsabilidad de elaborar una respuesta
+        A esta pregunta?
+      accept: Aceptar
+      reject: Rechazar
+      please_select_one_of: Por favor, seleccione una de las razones para rechazar la pregunta
+      i_think_it_is: Creo que es para otra persona de mi equipo
+      i_think_it_is_1: Creo que es para otro departamento gubernamental
+      please_give_us_information: Por favor envíenos información acerca de por qué you rechazas
+        la pregunta
+      save_response: Guardar respuesta
+      if_you_have_any: Si usted tiene alguna pregunta por favor
+      the_question_has_been: la pregunta ha sido aceptado y ha sido un correo electrónico ha sido
+        Enviado al agente encargado de la aceptación con la redacción de instrucciones, póngase en contacto con la Asamblea
+        si usted tiene cualesquier pregunta
   dashboard:
     dashboard_filter:
-      quick_actions: Quick actions
-      filter: Filter
-      date_for_answer: Date for answer
-      from: From
-      to: To
-      internal_deadline: Internal deadline
-      1_selected: 1 selected
-      keywords: Keywords
+      quick_actions: acciones rápidas
+      filter: el filtro
+      date_for_answer: Fecha de respuesta
+      from: De
+      to: A
+      internal_deadline: fecha límite interna
+      1_selected: 1 seleccionado
+      keywords: Palabras clave
     question_data:
-      date_for_answer: Date for answer
+      date_for_answer: Fecha de respuesta
     question_data_commissioned:
-      internal_deadline: 'Internal deadline:'
-      replying_minister: 'Replying minister:'
-      policy_minister: 'Policy minister:'
-      action_officer_s: Action officer(s)
+      internal_deadline: 'Plazo Interno:'
+      replying_minister: 'respondiendo ministro:'
+      policy_minister: 'Politica del ministro:'
+      action_officer_s: acción oficial(s)
     question_data_uncommissioned:
       trim_link: Trim link
     questions_list:
-      parliamentary_questions: parliamentary questions
+      parliamentary_questions: Preguntas parlamentarias
     quick_action_draft_reminders: {}
     quick_action_edit_dates:
-      e_g_20_06: e.g. 20/06/2014
+      e_g_20_06: por ejemplo, el 20/06/2014
     quick_action_export: {}
     search:
-      search: Search
+      search: Buscar
   deputy_directors:
     form:
-      status: Status
-      inactive: Inactive
+      status: estado
+      inactive: INACTIVO
     edit:
-      edit_deputy_director: Edit deputy director
-      return_to_deputy_director: Return to deputy director list
+      edit_deputy_director: Editar director adjunto
+      return_to_deputy_director: Volver a la lista de director adjunto
     index:
-      deputy_directors: Deputy directors
-      add_deputy_director: Add deputy director
-      name: Name
-      division: Division
-      status: Status
-      edit: Edit
+      deputy_directors: Directores Adjuntos
+      add_deputy_director: Agregar director adjunto
+      name: Nombre
+      division: División
+      status: estado
+      edit: Editar
     new:
-      add_deputy_director: Add deputy director
-      return_to_deputy_director: Return to deputy director list
+      add_deputy_director: Agregar director adjunto
+      return_to_deputy_director: Volver a la lista de director adjunto
     show:
-      deputy_director_details: Deputy director details
-      name: Name
+      deputy_director_details: Detalles Director Adjunto
+      name: Nombre
       email: Email
-      division: Division
-      status: Status
-      edit: Edit
-      return_to_deputy_director: Return to deputy director list
+      division: División
+      status: estado
+      edit: Editar
+      return_to_deputy_director: Volver a la lista de director adjunto
   devise:
     confirmations:
       new:
-        resend_confirmation_instructions: Resend confirmation instructions
+        resend_confirmation_instructions: Reenviar instrucciones de confirmación
     mailer:
       confirmation_instructions:
-        welcome_email: Welcome %{email}!
-        you_can_confirm_your: 'You can confirm your account email through the link
+        welcome_email: Bienvenido  %{email}!
+        you_can_confirm_your: 'puedes confirmar tu dirección de correo electrónico de la cuenta a través del link
           below:'
-        confirm_my_account: Confirm my account
+        confirm_my_account: confirmar mi cuenta
       reset_password_instructions:
-        hello_resource: Hello %{resource}!
-        someone_has_requested_a: Someone has requested a link to change your password.
-          You can do this through the link below.
-        change_my_password: Change my password
-        if_you_didn_t: If you didn't request this, please ignore this email.
-        your_password_won_t: Your password won't change until you access the link
-          above and create a new one.
+        hello_resource: Hola  %{resource}!
+        someone_has_requested_a: alguien ha solicitado un enlace para cambiar su contraseña.
+          Puede hacerlo a través del siguiente enlace.
+        change_my_password: Cambiar mi contraseña
+        if_you_didn_t: Si no lo has solicitado, ignora este mensaje.
+        your_password_won_t: Tu contraseña no cambiará hasta que acceda al enlace
+          Anteriormente enviado y crees una nueva.
       unlock_instructions:
-        hello_resource: Hello %{resource}!
-        your_account_has_been: Your account has been locked due to an excessive number
-          of unsuccessful sign in attempts.
-        click_the_link_below: 'Click the link below to unlock your account:'
-        unlock_my_account: Unlock my account
+        hello_resource: Hola  %{resource}!
+        your_account_has_been: Su cuenta ha sido bloqueada debido a un número excesivo
+           Signo del fracaso en los intentos.
+        click_the_link_below: 'Haga clic en el siguiente enlace para desbloquear su cuenta:'
+        unlock_my_account: Desbloquear mi cuenta
     passwords:
       edit:
-        change_your_password: Change your password
+        change_your_password: Cambiar su contraseña
       new:
-        forgot_your_password: Forgot your password?
+        forgot_your_password: ¿Has olvidado tu contraseña?
     registrations:
       edit:
-        edit_resource_name: Edit %{resource_name}
-        currently_waiting_confirmation_for: 'Currently waiting confirmation for: %{resource}'
-        leave_blank_if: "(leave blank if you don't want to change it)"
-        cancel_my_account: Cancel my account
-        back: Back
+        edit_resource_name: Editar %{resource_name}
+        currently_waiting_confirmation_for: 'Actualmente a la espera de confirmación: %{resource}'
+        leave_blank_if: "(deje en blanco si no desea cambiarlo)"
+        cancel_my_account: cancelar mi cuenta
+        back: atrás
       new:
-        sign_up: Sign up
+        sign_up: regístrese
     sessions:
       new:
-        sign_in: Sign in
-        remember_me: Remember me
+        sign_in: Iniciar sesión
+        remember_me: Recordarme
     shared:
       links:
-        sign_in: Sign in
-        sign_up: Sign up
-        forgot_your_password: Forgot your password?
-        didn_t_receive_confirmation: Didn't receive confirmation instructions?
-        didn_t_receive_unlock: Didn't receive unlock instructions?
-        sign_in_with_provider: 'Sign in with # provider.to_s.titleize '
+        sign_in: Iniciar sesión
+        sign_up: regístrese
+        forgot_your_password: ¿Has olvidado tu contraseña?
+        didn_t_receive_confirmation: no recibí instrucciones de confirmación?
+        didn_t_receive_unlock: no recibi instrucciones de desbloqueo?
+        sign_in_with_provider: 'Iniciar sesión con # provider.to_s.titleize '
     unlocks:
       new:
-        resend_unlock_instructions: Resend unlock instructions
+        resend_unlock_instructions: Reenviar instrucciones de desbloqueo
   directorates:
     form:
-      status: Status
-      inactive: Inactive
+      status: estado
+      inactive: INACTIVO
     edit:
-      edit_directorate: Edit directorate
-      return_to_directorate_list: Return to directorate list
+      edit_directorate: Editar junta administrativa
+      return_to_directorate_list: Volver a la lista de la junta administrativa
     index:
-      directorates: Directorates
-      add_directorate: Add directorate
-      name: Name
-      status: Status
-      edit: Edit
+      directorates: Directores
+      add_directorate: Añadir directores
+      name: Nombre
+      status: estado
+      edit: Editar
     new:
-      new_directorate: New directorate
-      return_to_directorate_list: Return to directorate list
+      new_directorate: Nuevo director
+      return_to_directorate_list: Volver a la lista de directores
     show:
-      directorate_details: Directorate details
-      name: Name
-      status: Status
-      edit: Edit
-      return_to_directorate_list: Return to directorate list
+      directorate_details: Directorate detalles
+      name: Nombre
+      status: estado
+      edit: Editar
+      return_to_directorate_list: RVolver a la lista de directores
   divisions:
     form:
-      status: Status
-      inactive: Inactive
+      status: estado
+      inactive: INACTIVO
     edit:
-      edit_division: Edit division
-      return_to_divisions_list: Return to Divisions list
+      edit_division: Editar división
+      return_to_divisions_list: Volver a la lista de división
     index:
-      divisions: Divisions
-      add_division: Add division
-      name: Name
-      directorate: Directorate
-      status: Status
-      edit: Edit
+      divisions: Divisiones
+      add_division: Agregar división
+      name: Nombre
+      directorate: Junta administrativa
+      status: estado
+      edit: Editar
     new:
-      new_division: New Division
-      return_to_divisions: Return to divisions
+      new_division: nueva división
+      return_to_divisions: Volver a divisiones
     show:
-      division_details: Division details
-      name: Name
-      directorate: Directorate
-      status: Status
-      edit: Edit
-      return_to_divisions_list: Return to divisions list
+      division_details: Detalles de la división
+      name: Nombre
+      directorate: Directorio
+      status: estado
+      edit: Editar
+      return_to_divisions_list: Volver a la lista de divisiones
   early_bird_dashboard:
     index:
-      new_parliamentary_questions_to: New parliamentary questions to be allocated
-        today (%{now})
-      filter: Filter
-      1_selected: 1 selected
-      keywords: Keywords
-      new_parliamentary_questions: new parliamentary questions
-      named_day: "| Named Day"
-      transferred_in: "| Transferred in"
-      ordinary: "| Ordinary"
-      asked_by: 'Asked by:'
+      new_parliamentary_questions_to: Nuevas preguntas parlamentarias a asignarse
+        Hoy (%{now})
+      filter: Filtro
+      1_selected: 1 seleccionado
+      keywords: Palabras clave
+      new_parliamentary_questions: nuevas preguntas parlamentarias
+      named_day: "| dia nombrado"
+      transferred_in: "| transferidos en"
+      ordinary: "| ordinaria"
+      asked_by: 'Preguntado por:'
       question: "%{question}"
-      constituency: 'Constituency:'
+      constituency: 'Circunscripción:'
       n_a: N/A
   early_bird_members:
     form:
-      status: Status
-      inactive: Inactive
+      status: estado
+      inactive: INACTIVO
     edit:
-      edit_early_bird_member: Edit early bird member
-      return_to_early_bird: Return to early bird member list
+      edit_early_bird_member: Editar miembro de reserva anticipada
+      return_to_early_bird: Volver a la lista de miembros de reserva
     index:
-      early_bird_members: Early bird members
-      send_early_bird_info: Send early bird info
+      early_bird_members: miembro de reserva anticipada
+      send_early_bird_info: Enviar info Early Bird
       onclick_ga: ', :onclick=> "ga('
-      add_early_bird_member: Add early bird member
-      early_bird_preview: Early bird preview
-      name: Name
+      add_early_bird_member: Agregar miembro Early Bird
+      early_bird_preview: vista previa de Early Bird
+      name: Nombre
       email: Email
-      status: Status
-      edit: Edit
+      status: estado
+      edit: Editar
     new:
-      add_early_bird_member: Add early bird member
-      return_to_early_bird: Return to early bird member list
+      add_early_bird_member: Agregar miembro Early Bird
+      return_to_early_bird: Volver a la lista de miembros de Early Bird
     show:
-      early_bird_member_details: Early bird member details
-      name: Name
+      early_bird_member_details: detalles Early Bird miembro
+      name: Nombre
       email: Email
-      status: Status
-      edit: Edit
-      return_to_early_bird: Return to early bird member list
+      status: estado
+      edit: Editar
+      return_to_early_bird: Volver a la lista de miembros de Early Bird
   export:
     index:
-      export_pqs_to: Export PQs to
-      select_the_range_of: Select the range of dates to do the export
+      export_pqs_to: exportar preguntas a
+      select_the_range_of: seleccione el rango de fechas para realizar la exportación
       onclick_ga: ' , :onclick=> "ga('
-      download_csv: Download CSV
+      download_csv: Descargar CSV
     index_for_pod:
-      export_pqs_to: Export PQs to
-      select_the_range_of: Select the range of dates to do the export
+      export_pqs_to: exportar preguntas a
+      select_the_range_of: seleccione el rango de fechas para realizar la exportación
       onclick_ga: ' ,  :onclick=> "ga('
-      download_csv: Download CSV
+      download_csv: Descargar CSV
   finance:
     questions:
-      new_pqs_today: New PQs today
-      there_are_not_more: There are not more questions to review
-      named_day: Named day
-      transferred_in: Transferred in
-      register_interest: Register interest
-      date_for_answer: Date for answer
-      confirm_visibility_of_all: Confirm Visibility of all PQs
+      new_pqs_today: Nuevas Preguntas hoy
+      there_are_not_more: no hay más preguntas para revisar
+      named_day: Dia nombrada
+      transferred_in: transferido en
+      register_interest: Registrar interés
+      date_for_answer: Fecha de respuesta
+      confirm_visibility_of_all: confirmar la visibilidad de todas las Preguntas
   gecko_report:
     index:
-      gecko_report: Gecko report
+      gecko_report: informe de Gecko
   layouts:
     application:
-      this_is_a_new: This is a new service - Your
-      will_help_us_to: will help us to improve it.
-      this_is_not_the: This is not the live Parliamentary Questions Tracker environment
-      contact_parliamentary_branch: Contact Parliamentary Branch
+      this_is_a_new: Este es un nuevo servicio - Su
+      will_help_us_to: nos ayudará a mejorarlo.
+      this_is_not_the: Este no es el entorno en vivo y oficial de rastreo de preguntas parlamentarias.
+      contact_parliamentary_branch: Contacta con la rama parlamentaria
   members:
     by_name:
-      select: Select
+      select: Seleccione
   metrics_dashboard:
     index:
-      metrics_dashboard: Metrics dashboard
-      system_health: System health
-      application_data: Application data
+      metrics_dashboard: Tablero de mediciones
+      system_health: Salud del sistema
+      application_data: datos de la aplicación
       version: 'Version:'
-      built_on: 'Built on:'
+      built_on: 'construido en:'
       build_tag: 'Build tag:'
       latest_git_commit: 'Latest git commit:'
       emails: Emails
-      number_waiting: 'Number waiting:'
-      number_abandoned: 'Number abandoned:'
+      number_waiting: 'Número de espera:'
+      number_abandoned: 'número de abandonadas:'
       number_of_unanswered_tokens: 'Number of unanswered tokens:'
       questions_import: Questions Import
       last_run_at: 'Last run at:'

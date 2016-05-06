@@ -1,14 +1,14 @@
-h1 Deputy directors
+h1= t('.deputy_directors')
 #admin-deputy-list
   div class="row"
     ul#admin-button-bar
-      li= link_to ('Add deputy director'), new_deputy_director_path, {class: 'button-secondary'}
+      li= link_to (t('.add_deputy_director')), new_deputy_director_path, {class: 'button-secondary'}
   table.table
     thead
       tr
-        th Name
-        th Division
-        th#admin-status Status
+        th= t('.name')
+        th= t('.division')
+        th#admin-status= t('.status')
         th
     tbody
       - @deputy_directors.each do |deputy_director|
@@ -16,4 +16,4 @@ h1 Deputy directors
           td= link_to deputy_director.name, deputy_director_path(deputy_director)
           td= deputy_director.division.name
           td= render partial: 'shared/status', object: deputy_director
-          td.edit= link_to 'Edit', edit_deputy_director_path(deputy_director)
+          td.edit= link_to t('.edit'), edit_deputy_director_path(deputy_director)

@@ -1,7 +1,7 @@
 - if @pq.action_officers.size > 0
   - @pq.action_officers_pqs.each do |ao_pq|
     - if ao_pq.accepted?
-      h3 Date PQ accepted by action officer
+      h3= t('.date_pq_accepted_by')
       p.text= ao_pq.updated_at.to_s
 .form-group
   label.form-label for="draft_answer_received"  Date PQ returned by action officer
@@ -10,11 +10,11 @@
     span.fa.fa-calendar title="select a date"
 = render partial: 'gds_checkbox', locals: { value: @pq.i_will_write,
                                             field: 'i_will_write',
-                                            label: 'I will write' }
+                                            label: t('.i_will_write') }
 
 = render partial: 'gds_checkbox', locals: { value: @pq.pq_correction_received,
                                             field: 'pq_correction_received',
-                                            label: 'Pq correction received' }
+                                            label: t('.pq_correction_received') }
 .form-group
   label.form-label for="correction_circulated"  Date correction circulated to action officer
   .datetimepicker

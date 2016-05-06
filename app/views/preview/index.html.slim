@@ -1,47 +1,47 @@
 #preview
 
-  h1 New parliamentary questions to be allocated today (#{@now})
+  h1= t('.new_parliamentary_questions_to', now: (@now))
 
   #main
     #count
-      strong #{@questions.length}
+      strong= t('.questions', questions: (@questions.length))
       = ' '
-      span new parliamentary questions
+      span= t('.new_parliamentary_questions')
     ul
       - @questions.each do |question|
         li
           h2
             strong #{question.uin}
             - if question.question_type == 'NamedDay'
-              span Named day
+              span= t('.named_day')
             - if question.transferred
-              span Transferred in
+              span= t('.transferred_in')
             - if question.question_type == 'Ordinary'
-              span.hide Ordinary
+              span.hide= t('.ordinary')
           p#question #{question.question}
           - unless question.member_name.empty?
-            h3 Asked by:
+            h3= t('.asked_by')
             p#asked-by #{question.member_name}
-            h3 Constituency:
+            h3= t('.constituency')
             - if question.member_constituency.nil?
-              | N/A
+              = t('.n_a')
             - else
               p#constituency #{question.member_constituency}
           hr
 
   #filters
-    h2 Filter by:
+    h2= t('.filter_by')
     .filter-box
-      h3 Contains
+      h3= t('.contains')
       input type="text"
     .filter-box
-      h3 Question type
+      h3= t('.question_type')
       div
         input type="checkbox"
-        span Named day
+        span= t('.named_day')
         br
         input type="checkbox"
-        span Ordinary
+        span= t('.ordinary')
         br
         input type="checkbox"
-        span Transferred in
+        span= t('.transferred_in')

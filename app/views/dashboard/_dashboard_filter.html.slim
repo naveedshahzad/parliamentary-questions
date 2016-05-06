@@ -1,24 +1,24 @@
 #sidebar.col-md-3.col-md-push-9
 
   #quick-links
-    h2 Quick actions
+    h2= t('.quick_actions')
     = render partial: "dashboard/quick_action_draft_reminders", locals: {total_pqs: @total_pqs}
     = render partial: "dashboard/quick_action_edit_dates", locals: {total_pqs: @total_pqs}
     = render partial: "dashboard/quick_action_export", locals: {total_pqs: @total_pqs, pqs_comma_separated: @pqs_comma_separated}
 
   #filters
-    h2 Filter
+    h2= t('.filter')
     - if @dashboard_state == "In progress" || @dashboard_state == "Backlog"
 
       #date-for-answer.filter-box
-        h3 Date for answer
+        h3= t('.date_for_answer')
         input#answer-date-today.right type="button" value="Today"
         .content
-          h4 From
+          h4= t('.from')
           .datepicker.form-group
             input#answer-from.form-control type="text" placeholder="e.g. 20/06/2014"
             span.fa.fa-calendar title="select a date"
-          h4 To
+          h4= t('.to')
           .datepicker.form-group
             input#answer-to.form-control type="text" placeholder="e.g. 20/06/2014"
             span.fa.fa-calendar title="select a date"
@@ -26,15 +26,15 @@
             input#clear-answer-filter.right type="button" value="Clear"
 
       #internal-deadline.filter-box
-        h3 Internal deadline
+        h3= t('.internal_deadline')
         input#deadline-date-today.right type="button" value="Today"
         .content
-          h4 From
+          h4= t('.from')
           .datepicker.form-group
             input#deadline-from.form-control type="text" placeholder="e.g. 20/06/2014"
             span.fa.fa-calendar title="select a date"
 
-          h4 To
+          h4= t('.to')
           .datepicker.form-group
             input#deadline-to.form-control type="text" placeholder="e.g. 20/06/2014"
             span.fa.fa-calendar title="select a date"
@@ -45,7 +45,7 @@
     #flag.filter-box
       input.view.open type="button" value="Status"
       .notice
-        span 1 selected
+        span= t('.1_selected')
       .content.collapsed
         .list
           - if @statuses.count > 1
@@ -108,7 +108,7 @@
       #replying-minister.filter-box
         input.view.open type="button" value="Replying minister"
         .notice
-          span 1 selected
+          span= t('.1_selected')
         .content.collapsed
           .list
             - if @answering_minister_names.count > 1
@@ -124,7 +124,7 @@
       #policy-minister.filter-box
         input.view.open type="button" value="Policy minister"
         .notice
-          span 1 selected
+          span= t('.1_selected')
         .content.collapsed
           .list
             - if @policy_minister_names.count > 0
@@ -143,7 +143,7 @@
       #question-type.filter-box
         input.view.open type="button" value="Question type"
         .notice
-          span 1 selected
+          span= t('.1_selected')
         .content.collapsed
           .list
             - if @question_types.count > 1
@@ -170,7 +170,7 @@
             input#clear.right type="button" value="Clear"
 
       .filter-box
-        h3 Keywords
+        h3= t('.keywords')
         .content
           input#keywords.form-control type="text" placeholder="e.g. keywords, names"
           .clearFilter

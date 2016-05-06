@@ -11,16 +11,16 @@
   main#wrapper(role="main")
     .phase-banner
       / p.phase-tag = config_item(:phase).upcase )(this line is kept incase the moj elements change and this line needs to be reinstated!)
-      span This is a new service - Your&nbsp;
+      span=> t('.this_is_a_new')
       - if ! user_signed_in?
         <a href="mailto:PQFeedback@digital.justice.gov.uk?Subject=PQ%20Feedback">feedback</a>&nbsp;
       - else
         <a href="mailto:PQFeedback@digital.justice.gov.uk?Subject=PQ%20Tracker">feedback</a>&nbsp;
-      | will help us to improve it.
+      = t('.will_help_us_to')
 
     - if HostEnv.is_staging?
       .staging_banner
-        | This is not the live Parliamentary Questions Tracker environment
+        = t('.this_is_not_the')
 
     #content
       = render partial: "shared/navigation"
@@ -30,7 +30,7 @@
 
 - content_for :footer_support_links do
   li
-    = link_to "Contact Parliamentary Branch", "mailto:pqs@justice.gsi.gov.uk?Subject=PQ%20Tracker"
+    = link_to t('.contact_parliamentary_branch'), "mailto:pqs@justice.gsi.gov.uk?Subject=PQ%20Tracker"
 
 - content_for :body_end
 

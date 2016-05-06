@@ -1,16 +1,16 @@
 = render partial: "shared/flash_messages", flash: flash
 #admin-ao-list
-  h1 Action officers
+  h1= t('.action_officers')
   .row
     ul#admin-button-bar
-      li= link_to ('Add Action Officer'), new_action_officer_path, {class: 'button-secondary'}
+      li= link_to (t('.add_action_officer')), new_action_officer_path, {class: 'button-secondary'}
   table.table
     thead
       tr
-        th Name
-        th Division
-        th Press desk
-        th#admin-status Status
+        th= t('.name')
+        th= t('.division')
+        th= t('.press_desk')
+        th#admin-status= t('.status')
         th
     tbody
       - @action_officers.each do |action_officer|
@@ -19,4 +19,4 @@
           td= action_officer.deputy_director.division.name unless action_officer.deputy_director.nil?
           td= action_officer.press_desk.name unless action_officer.press_desk.nil?
           td= render partial: 'shared/status', object: action_officer
-          td.edit= link_to 'Edit', edit_action_officer_path(action_officer)
+          td.edit= link_to t('.edit'), edit_action_officer_path(action_officer)

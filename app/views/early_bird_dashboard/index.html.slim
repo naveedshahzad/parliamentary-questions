@@ -1,15 +1,15 @@
 #preview
 
   #main
-    h1 New parliamentary questions to be allocated today (#{@now})
+    h1= t('.new_parliamentary_questions_to', now: (@now))
 
     #sidebar.col-md-3.col-md-push-9
       #filters.js-stick-at-top-when-scrolling
-        h2 Filter
+        h2= t('.filter')
         #question-type.filter-box
           input.view.open type="button" value="Question type"
           .notice
-            span 1 selected
+            span= t('.1_selected')
           .content.collapsed
             .list
               label for="named-day"
@@ -25,7 +25,7 @@
               input#clear-type-filter.clear.right type="button" value="Clear"
 
         .filter-box
-          h3 Keywords
+          h3= t('.keywords')
           .content
             input#keywords.form-control type="text" placeholder="e.g. keywords, names"
             .clearFilter
@@ -40,7 +40,7 @@
       #count
         strong #{@questions.length}
         = ' '
-        span new parliamentary questions
+        span= t('.new_parliamentary_questions')
       ul.questions-list
         - @questions.each do |question|
           li.question
@@ -50,21 +50,21 @@
                   u= link_to(question.uin, {controller: 'pqs', action: 'show', id: question.uin}, :class => "question-uin")
                 .pq-header-flags
                   - if question.question_type == 'NamedDay'
-                    span.question-type | Named Day
+                    span.question-type= t('.named_day')
                   - if question.transferred
-                    span.question-type | Transferred in
+                    span.question-type= t('.transferred_in')
                   - if question.question_type == 'Ordinary'
-                    span.question-type | Ordinary
+                    span.question-type= t('.ordinary')
               .col-md-5
               .col-md-2
             span.pq-question #{question.question}
             - unless question.member_name.empty?
-              h3 Asked by:
+              h3= t('.asked_by')
               span.asked-by #{question.member_name}
               br
-              h3 Constituency:
+              h3= t('.consituency')
               - if question.member_constituency.nil?
-                | N/A
+                = t('.n_a')
                 br
               - else
                 span.constituency #{question.member_constituency}

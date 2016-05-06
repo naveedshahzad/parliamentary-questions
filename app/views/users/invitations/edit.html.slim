@@ -8,4 +8,4 @@ h1= t 'devise.invitations.edit.header'
     = f.label :password_confirmation
     = f.password_field :password_confirmation, {class: 'form-control'}
   = f.submit t("devise.invitations.edit.submit_button"), {class: 'button'}
-= link_to 'Return to Users', users_path, {class: 'admin-link'}
+= link_to t('.return_to_users'), users_path, {class: 'admin-link'}

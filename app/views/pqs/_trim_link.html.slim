@@ -1,11 +1,11 @@
 - if @pq.trim_link.present?
   .form-group
-    h3 Options
+    h3= t('.options')
     - if @pq.has_trim_link?
-      = link_to 'Open trim link', @pq.trim_link
+      = link_to t('.open_trim_link'), @pq.trim_link
       span.additional-action= f.submit 'Delete', class: 'button-secondary'
     - else
-      | Trim link deleted
+      = t('.trim_link_deleted')
       span.additional-action= f.submit 'Undo', class: 'link'
 .form-group.trim_area
   = f.fields_for :trim_link_attributes, @pq.trim_link do |trim|
@@ -16,4 +16,3 @@
       span.fa.fa-file-o
       span#tr5-message
       input#cancel.button-secondary.button-cancel type="button" value="Cancel"
-

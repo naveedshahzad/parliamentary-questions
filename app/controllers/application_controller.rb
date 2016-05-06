@@ -23,6 +23,7 @@ class ApplicationController < ActionController::Base
     end
   end
 
+
   def set_am_host
     request = self.request
     opts = ::ActionMailer::Base.default_url_options
@@ -53,6 +54,10 @@ class ApplicationController < ActionController::Base
 
   def update_page_title(prefix, suffix = "MOJ Parliamentary Questions")
     @page_title = "#{prefix} - #{suffix}"
+  end
+
+  def default_url_options(options = {})
+      { locale: I18n.locale }.merge options
   end
 
   protected

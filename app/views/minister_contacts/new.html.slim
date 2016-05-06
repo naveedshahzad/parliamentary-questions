@@ -1,4 +1,4 @@
 h1
-  | New contact for #{@minister.name}
+  = t('.new_contact_for_minister', minister: (@minister.name))
 = render 'form'
-= link_to 'Back', minister_path(@minister)
+= link_to t('.back'), minister_path(@minister)

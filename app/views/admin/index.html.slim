@@ -1,29 +1,29 @@
 #settings-home
-  h1 Settings
+  h1= t('.settings')
   .row
     .col-md-4
-      h2 Address books
+      h2= t('.address_books')
       ul
-        li= link_to 'Action officers', action_officers_path
-        li= link_to 'Watch list', watchlist_members_path
-        li= link_to 'Action list', actionlist_members_path
-        li= link_to 'Ministers', ministers_path
-        li= link_to 'Deputy directors', deputy_directors_path
-        li= link_to 'Press officers', press_officers_path
-        li= link_to 'Early bird list', early_bird_members_path
+        li= link_to t('.action_officers'), action_officers_path
+        li= link_to t('.watch_list'), watchlist_members_path
+        li= link_to t('.action_list'), actionlist_members_path
+        li= link_to t('.ministers'), ministers_path
+        li= link_to t('.deputy_directors'), deputy_directors_path
+        li= link_to t('.press_officers'), press_officers_path
+        li= link_to t('.early_bird_list'), early_bird_members_path
     .col-md-4
-      h2 Tasks
+      h2= t('.tasks')
       ul
-        li= link_to 'Create a transferred PQ', transferred_new_path
+        li= link_to t('.create_a_transferred_pq'), transferred_new_path
         li
           a href="#{export_path}" Export to <abbr title="Comma Separated Values">CSV</abbr>
         li
           a href="#{export_pod_path}" <abbr title="Private Office Directorate">POD</abbr> export to <abbr title="Comma Separated Values">CSV</abbr>
     .col-md-4
-      h2 User admin
+      h2= t('.user_admin')
       ul
-        li= link_to 'Users', users_path
-        li= link_to 'Directorates', directorates_path
-        li= link_to 'Divisions', divisions_path
-        li= link_to 'Press desks', press_desks_path
-        li= link_to 'Other Government Departments', ogds_path
+        li= link_to t('.users'), users_path
+        li= link_to t('.directorates'), directorates_path
+        li= link_to t('.divisions'), divisions_path
+        li= link_to t('.press_desks'), press_desks_path
+        li= link_to t('.other_government_departments'), ogds_path

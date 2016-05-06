@@ -1,6 +1,6 @@
 #watchlist-preview
   h1
-    | Questions Allocated #{Date.today.to_s}
+    = t('.questions_allocated_date', Date: (Date.today.to_s))
   h2.section
     = "Allocated Today "
     span.badge= @questions.length
@@ -8,17 +8,17 @@
     h3= question.uin
     p.text= question.question
     - unless question.date_for_answer.nil?
-      h4 Date For Answer
+      h4= t('.date_for_answer')
       p.text= question.date_for_answer.to_s(:date)
     - unless question.internal_deadline.nil?
-      h4 Internal deadline
+      h4= t('.internal_deadline')
       p.text= question.internal_deadline.to_s
     h4= question.house_name
     p.text= question.member_name
     .allocation-info
       - if question.action_officers_pqs.size > 0
         .question-allocation
-          h4 Allocation
+          h4= t('.allocation')
           ul.question-allocation-list data-pqid=question.id data-pquin=question.uin
             - question.action_officers_pqs.each do |ao_pq|
               - if !ao_pq.action_officer.nil?

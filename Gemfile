@@ -26,6 +26,7 @@ gem 'unicorn'
 gem 'whenever', :require => false
 gem 'will_paginate'
 gem 'responders', '~> 2.0'
+gem 'google-spreadsheet-ruby'
 
 group :development do
   gem 'rails-erd'

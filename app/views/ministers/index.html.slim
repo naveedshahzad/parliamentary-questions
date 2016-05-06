@@ -1,14 +1,14 @@
-h1 Ministers
+h1= t('.ministers')
 #admin-ministers-list
   div class="row"
     ul#admin-button-bar
-      li= link_to ('Add minister'), new_minister_path, {class: 'button-secondary'}
+      li= link_to (t('.add_minister')), new_minister_path, {class: 'button-secondary'}
   table.table
     thead
       tr
-        th#minister-name Name
-        th Title
-        th#admin-status Status
+        th#minister-name= t('.name')
+        th= t('.title')
+        th#admin-status= t('.status')
         th
     tbody
       - @ministers.each do |minister|
@@ -16,4 +16,4 @@ h1 Ministers
           td= link_to minister.name, minister_path(minister)
           td= minister.title
           td= render partial: 'shared/status', object: minister
-          td.edit= link_to 'Edit', edit_minister_path(minister)
+          td.edit= link_to t('.edit'), edit_minister_path(minister)

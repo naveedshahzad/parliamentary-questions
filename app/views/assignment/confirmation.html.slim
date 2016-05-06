@@ -1,30 +1,30 @@
 = render partial: 'shared/flash_messages'
 - if @assignment.rejected?
   p.space-before-20
-    strong Thank you for your response
+    strong= t('.thank_you_for_your')
   p.space-before
-    | You rejected PQ
+    = t('.you_rejected_pq')
     strong= " #{@question.uin} "
     = raw @assignment.updated_at.to_s(:wordy)
     = ' stating: '
   p.space-before
     = "#{@assignment.reason_option} - #{@assignment.reason}"
-  p.space-before Your message has been sent to the PQ team. You don't need to take any further action.
+  p.space-before= t('.your_message_has_been')
 - elsif @question.action_officers_pqs.accepted.action_officer_id == @assignment.action_officer_id
   p.space-before-20
-    strong Thank you for your response
+    strong= t('.thank_you_for_your')
   p.space-before
-    | You accepted PQ
+    = t('.you_accepted_pq')
     strong= " #{@question.uin} "
     = raw @question.action_officers_pqs.accepted.updated_at.to_s(:wordy)
-  p.space-before You will receive a further email which explains how and when to return your draft response, and provides a link to PQ guidance on the intranet.
+  p.space-before= t('.you_will_receive_a')
 - else
   p
-    strong This PQ has already been accepted
+    strong= t('.this_pq_has_already')
   = @question.action_officers_pqs.accepted.action_officer.name
   = ' accepted PQ'
   strong= " #{@question.uin} "
   = raw @question.action_officers_pqs.accepted.updated_at.to_s(:wordy)
 p.space-before
-  | If you have any queries please
+  = t('.if_you_have_any')
   a href="mailto:#{Settings.mail_reply_to}"  contact the PQ team

@@ -1,11 +1,11 @@
 #admin-al-details
-  h1 Actionlist member details
+  h1= t('.actionlist_member_details')
   = render partial: "shared/flash_messages", flash: flash
-  h2 Name
+  h2= t('.name')
   p.text= @actionlist_member.name
-  h2 Email
+  h2= t('.email')
   p.text= @actionlist_member.email
-  h2 Status
+  h2= t('.status')
   = render partial: 'shared/status', object: @actionlist_member
-  = link_to 'Edit', edit_actionlist_member_path(@actionlist_member), {class: 'admin-link'}
-  = link_to 'Return to actionlist member list', actionlist_members_path, {class: 'admin-link'}
+  = link_to t('.edit'), edit_actionlist_member_path(@actionlist_member), {class: 'admin-link'}
+  = link_to t('.return_to_actionlist_member'), actionlist_members_path, {class: 'admin-link'}

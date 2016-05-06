@@ -1,10 +1,10 @@
 = render partial: 'shared/flash_messages'
 h1
-  | New PQs today&nbsp;
+  => t('.new_pqs_today')
   span.badge= @questions.count
 hr/
 - if @questions.count == 0
-  p There are not more questions to review
+  p= t('.there_are_not_more')
 - if @questions.count > 0
   = form_tag :controller => 'finance', :action => 'confirm' do
     ul.questions-list.col-md-9
@@ -14,22 +14,22 @@ hr/
             .pq-header
               h2= question.uin
               - if question.question_type == 'NamedDay'
-                span.question-type  Named day
+                span.question-type= t('.named_day')
               - if question.transferred
-                span.question-type  Transferred in
+                span.question-type= t('.transferred_in')
             .pq-question
               p.text= question.question
             .row
               .form-group.col-md-6
                 label.block-label for="pq[#{question.id}][finance_interest]"
                   input id="pq[#{question.id}][finance_interest]" name="pq[#{question.id}][finance_interest]" type="checkbox" value="true" /
-                  | Register interest
+                  = t('.register_interest')
               .col-md-6
                 span.form-group
                 h2= question.house_name
                 p.text= question.member_name
-                h2 Date for answer
+                h2= t('.date_for_answer')
                 p.text= question.date_for_answer.try(:to_s, :date)
                 input name="pq[#{question.id}][seen_by_finance]" type="hidden" value="true" /
     #confirmation_button_bar.col-md-9
-      = submit_tag 'Confirm Visibility of all PQs' , id: 'btn_finance_visibility' , class: 'button'
+      = submit_tag t('.confirm_visibility_of_all') , id: 'btn_finance_visibility' , class: 'button'

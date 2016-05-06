@@ -1,4 +1,4 @@
-h1 Add action officer
+h1= t('.add_action_officer')
 = render partial: "shared/flash_messages", flash: flash
 = render 'form'
-= link_to 'Return to action officer list', action_officers_path, {class: 'admin-link'}
+= link_to t('.return_to_action_officer'), action_officers_path, {class: 'admin-link'}

@@ -1,12 +1,12 @@
 #stages_time
 
- h1 Statistics
+ h1= t('.statistics')
 
- h2 Question duration in phases
+ h2= t('.question_duration_in_phases')
 
  #graph
   #graph-inner
-   p Average time in phase
+   p= t('.average_time_in_phase')
    canvas#current width="600" height="400"
 
   #x-axis 5-day / 30-day comparison by phase
@@ -15,4 +15,3 @@
   | var chart_data_true =
   = raw(@report.to_json)
   | ;
-

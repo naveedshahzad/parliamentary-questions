@@ -4,6 +4,8 @@ development:
   encoding: unicode
   database: parliamentary-questions_dev
   host: localhost
+  user: postgres
+  password: apassword
   pool: 10
 
 
@@ -13,6 +15,8 @@ test: &test
   encoding: unicode
   database: parliamentary-questions_test
   host: localhost
+  user: postgres
+  password: apassword
   pool: 10
 
 production:
@@ -22,6 +26,8 @@ production:
   username: <%= ENV['DB_USERNAME'] %>
   password: <%= ENV['DB_PASSWORD'] %>
   database: <%= ENV['DB_NAME'] || 'parliamentary-questions' %>
+  user: postgres
+  password: apassword
   pool: 15
 
 cucumber:

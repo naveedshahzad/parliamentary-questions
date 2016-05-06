@@ -6,7 +6,7 @@
       span.fa.fa-calendar title="select a date"
   = render partial: 'gds_checkbox', locals: { value: @pq.answering_minister_query,
                                               field: 'answering_minister_query',
-                                              label: 'Answering minister query' }
+                                              label: t('.answering_minister_query') }
   .form-group
     label.form-label for="answering_minister_to_action_officer"  Date sent back to action officer
     .datetimepicker
@@ -38,7 +38,7 @@
 
     = render partial: 'gds_checkbox', locals: { value: @pq.policy_minister_query,
                                                 field: 'policy_minister_query',
-                                                label: 'Policy minister query' }
+                                                label: t('.policy_minister_query')}
 
     .form-group
       label.form-label for="policy_minister_to_action_officer"  Date sent back to action officer

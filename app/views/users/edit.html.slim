@@ -1,5 +1,5 @@
 h1
-  | Edit user: #{@user.name}
+  = t('.edit_user_user', user: (@user.name))
 #admin-user-form
   = form_for @user do |f|
     .form-group
@@ -12,11 +12,11 @@ h1
       = f.label(:roles, "Role:")
       = f.select(:roles, [ User::ROLE_PQ_USER, User::ROLE_FINANCE ])
     - unless @user.new_record?
-      p Status:
+      p= t('.status')
       .form-group
         label.block-label for="user_deleted"
           = f.check_box :deleted
-          | Inactive
+          = t('.inactive')
     .form-group
       = f.submit 'Save', :id => 'save', :class => 'button'
-= link_to 'Return to user list', users_path, {class: 'admin-link'}
+= link_to t('.return_to_user_list'), users_path, {class: 'admin-link'}

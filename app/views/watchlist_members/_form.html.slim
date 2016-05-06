@@ -9,10 +9,10 @@
       .form-group
         label.form-label for="watchlist_member_email"  Email
         = f.email_field :email , {class: 'form-control'}
-      p.text Status
+      p.text= t('.status')
       .form-group
         label.block-label for="watchlist_member_deleted"
           = f.check_box :deleted
-          | Inactive
+          = t('.inactive')
       .form-group
         = f.submit 'Save', :id => 'save', :class => 'button'

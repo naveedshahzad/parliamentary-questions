@@ -1,4 +1,4 @@
 h1
-  | Edit minister contact
+  = t('.edit_minister_contact')
 = render 'form'
-= link_to 'Back', minister_path(@minister)
+= link_to t('.back'), minister_path(@minister)

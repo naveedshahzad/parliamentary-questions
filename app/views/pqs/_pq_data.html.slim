@@ -1,7 +1,7 @@
 h3
   abbr title="Unique Identification Number" UIN
 p.text= @pq.uin
-h3 House
+h3= t('.house')
 p.text= @pq.house_name
 
 .form-group
@@ -10,29 +10,29 @@ p.text= @pq.house_name
     input#date_for_answer.form-control name="pq[date_for_answer]" type="text" value=(@pq.date_for_answer.try(:to_s, :date)) /
     span.fa.fa-calendar title="select a date"
 
-h3 Tabling member
+h3= t('.tabling_member')
 p.text= @pq.member_name
 
-h3 Question type
+h3= t('.question_type')
 p.text= @pq.question_type
 
-h3 Question tabled date
+h3= t('.question_tabled_date')
 - if @pq.tabled_date
   p.text= @pq.tabled_date.try(:to_s, :date)
 - if @pq.registered_interest
   p.text
-    | * Member has registered an interest in the Question.
+    = t('.member_has_registered')
 - if @pq.transfer_in_ogd_id
   p.text
-    | Transferred in from #{@pq.transfer_in_ogd.name} on #{@pq.transfer_in_date.try(:to_s, :date)}
+    = t('.transferred_in_from_pq', pq: (@pq.transfer_in_ogd.name), pq1: (@pq.transfer_in_date.try(:to_s, :date)))
 hr/
 
-h3 Question
+h3= t('.question')
 p.text= @pq.question
 hr/
 = render partial: 'gds_checkbox', locals: { value: @pq.round_robin,
                                             field: 'round_robin',
-                                            label: 'Round robin' }
+                                            label: t('.round_robin') }
 .form-group
   label.form-label for="round_robin_guidance_received"  Date guidance received
   .datetimepicker

@@ -2,11 +2,11 @@
   #pq-details-ref.col-md-9
     h1= @pq.uin
     - if @pq.question_type == 'NamedDay'
-      span.question-type  Named day
+      span.question-type= t('.named_day')
     - if @pq.transferred
-      span.question-type  Transferred in
+      span.question-type= t('.transferred_in')
     - if @pq.i_will_write
-      span.question-type  I will write
+      span.question-type= t('.i_will_write')
     span#pq-details-progress class=("flag #{state_classname @pq.state}") = state_label @pq.state
     - if !@pq.preview_url.nil?
       #pq-details-qa-link.col-md-3.pull-right

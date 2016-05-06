@@ -1,10 +1,10 @@
 div#filter-report
-  h1 PQ filter
+  h1= t('.pq_filter')
   = render partial: 'shared/flash_messages'
   .row
     .col-md-9
       - if @questions.empty?
-        h2 Please select a filter option
+        h2= t('.please_select_a_filter')
       - else
         p.count
           = pluralize(@questions.total_entries,'Question') + ' found'
@@ -25,8 +25,8 @@ div#filter-report
             label.form-label for="progress_id"  Status
             = select_tag 'state', content_tag(:option,'Select a progress', :value=>'') + options_for_select(@states, params[:state] )
           .form-group
-            = submit_tag 'Report' , class: 'button' , :onclick=> "ga('send', 'event', 'reports', 'view', 'pq filter')"
-            = link_to 'Reset', filter_all_path, class: 'button-secondary'
+            = submit_tag t('.report') , class: 'button' , :onclick=> "ga('send', 'event', 'reports', 'view', 'pq filter')"
+            = link_to t('.reset'), filter_all_path, class: 'button-secondary'
   - if @questions.any?
     #pages.row
       = will_paginate @questions, {class: 'col-md-9'}

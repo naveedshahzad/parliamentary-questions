@@ -1,4 +1,4 @@
 #gecko_report
-  h1 Gecko report
+  h1= t('.gecko_report')
 
   span = @gecko_report.to_json.to_s.gsub(",", "</BR>").html_safe

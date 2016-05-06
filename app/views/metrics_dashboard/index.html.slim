@@ -1,8 +1,8 @@
 #metrics_dashboard
-  h1 Metrics dashboard
+  h1= t('.metrics_dashboard')
 
 
-  h2 System health
+  h2= t('.system_health')
   ul
     - @dashboard.gecko.each do |metric|
       li
@@ -16,58 +16,58 @@
             span.fa.fa-check-circle
           span = metric.message
 
-  h2 Application data
+  h2= t('.application_data')
   - app_info = @dashboard.metrics.application
   ul
     li
       div
-        span Version:
+        span= t('.version')
       div
         span = app_info.version
     li
       div
-        span Built on:
+        span= t('.built_on')
       div
         span = app_info.build_date
     li
       div
-        span Build tag:
+        span= t('.build_tag')
       div
         span = app_info.version
     li
       div
-        span Latest git commit:
+        span= t('.latest_git_commit')
       div
         span
           - commit_url = "https://github.com/ministryofjustice/parliamentary-questions/commit/"+app_info.git_sha
           a href=commit_url
             = app_info.git_sha
 
-  h2 Emails
+  h2= t('.emails')
   - mail = @dashboard.metrics.mail
   ul
     li
       div
-        span Number waiting:
+        span= t('.number_waiting')
       div
         span = mail.num_waiting
     li
       div
-        span Number abandoned:
+        span= t('.number_abandoned')
       div
         span = mail.num_waiting
     li
       div
-        span Number of unanswered tokens:
+        span= t('.number_of_unanswered_tokens')
       div
         span = mail.num_unanswered_tokens
 
-  h2 Questions Import
+  h2= t('.questions_import')
   - import = @dashboard.metrics.pqa_import
   ul
     li
       div
-        span Last run at:
+        span= t('.last_run_at')
       div
         span
           = import.last_run_time
@@ -77,17 +77,16 @@
             span.fa.fa-warning
     li
       div
-        span Number imported today:
+        span= t('.number_imported_today')
       div
         span = import.pqs.today
     li
       div
-        span Number imported this week:
+        span= t('.number_imported_this_week')
       div
         span = import.pqs.this_week
     li
       div
-        span Number imported this month:
+        span= t('.number_imported_this_month')
       div
         span = import.pqs.this_month
-

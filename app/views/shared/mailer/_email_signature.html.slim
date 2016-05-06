@@ -1,21 +1,21 @@
 p
 div style="font-size: 12pt;"
-  | The PQ Team
+  = t('.the_pq_team')
 p
 div style="font-size: 10pt;"
-  | Parliamentary Branch
+  = t('.parliamentary_branch')
   br/
-  | 9.25, Ministry of Justice, 102 Petty France, SW1H 9AJ
+  = t('.9_25_ministry_of')
   br/
-  | T: 0203 334 6155
+  = t('.t_0203_334_6155')
   br/
-  | E:
+  = t('.e')
   a href="mailto:#{Settings.mail_reply_to}" = Settings.mail_reply_to
 p
 div style="font-size: 12pt;"
-  | The content is best viewed in Firefox browser.
+  = t('.the_content_is_best')
 
 p
   small
-    | For any technical issues, e.g. broken links,
+    = t('.for_any_technical_issues')
     a<> href="mailto:pqsupport@digital.justice.gov.uk" contact PQ technical support.

@@ -1,11 +1,11 @@
-h1 Watchlist member details
+h1= t('.watchlist_member_details')
 #admin-wl-details
   = render partial: "shared/flash_messages", flash: flash
-  h2 Name
+  h2= t('.name')
   p.text= @watchlist_member.name
-  h2 Email
+  h2= t('.email')
   p.text= @watchlist_member.email
-  h2 Status
+  h2= t('.status')
   = render partial: 'shared/status', object: @watchlist_member
-  = link_to 'Edit', edit_watchlist_member_path(@watchlist_member), {class: 'admin-link'}
-  = link_to 'Return to watchlist member list', watchlist_members_path, {class: 'admin-link'}
+  = link_to t('.edit'), edit_watchlist_member_path(@watchlist_member), {class: 'admin-link'}
+  = link_to t('.return_to_watchlist_member'), watchlist_members_path, {class: 'admin-link'}

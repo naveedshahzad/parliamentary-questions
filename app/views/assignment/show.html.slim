@@ -5,23 +5,23 @@
       strong>= @ao.name
       | ,
     p.space-before
-      | You have been allocated the PQ&nbsp;
+      => t('.you_have_been_allocated')
       strong= @question.uin
   .row.row-spacer
     blockquote.pq-question.col-md-12
       = @question.question
   .row
     div
-      | Question asked by #{@question.member_name} (#{@question.house_name}).
+      = t('.question_asked_by_question', question: (@question.member_name), question1: (@question.house_name))
   .row
     div
-      | To be answered on behalf of #{@question.minister.name}.
+      = t('.to_be_answered_on', question: (@question.minister.name))
   .row.row-spacer
-    p.strong The deadline to accept or reject this allocation is 2pm today
+    p.strong= t('.the_deadline_to_accept')
   - if @question.action_officers_pqs.size > 1
     .row
       .question-allocation
-        p This question has also been allocated to the following action officers, but only one person may accept responsibility.
+        p= t('.this_question_has_also')
         ul.question-allocation-list data-pqid=@question.id
           - @question.action_officers_pqs.each do |ao_pq|
             - if !ao_pq.action_officer.nil? && ao_pq.action_officer_id!=@ao.id
@@ -32,7 +32,7 @@
     .accept-reject-form
       .panel.panel-default
         .panel-heading
-          | Will you take responsibility for drafting an answer to this question?
+          = t('.will_you_take_responsibility')
         .panel-body
           .row
             .col-md-6
@@ -42,34 +42,34 @@
                 .form-group.inline
                   label.block-label
                     = f.radio_button :response_action, 'accept'
-                    | Accept
+                    = t('.accept')
                   label.block-label
                     = f.radio_button :response_action, 'reject'
-                    | Reject
+                    = t('.reject')
                 #reason-textarea class=('hide' unless @response.rejected?)
                   - if !@response.errors[:reason_option].empty?
                     .pq-msg-error
-                      | Please select one of the reasons to reject the question
+                      = t('.please_select_one_of')
                   .form-group
                     select.form-control name="allocation_response[reason_option]"
                       option disabled="disabled" selected="selected"  Select your reasons for rejecting the question
-                      option I think it is for another person in my team
-                      option I think it is for another Directorate in MOJ
-                      option I think it is for another Division in MOJ
-                      option I think it is for an Other Government Department
+                      option= t('.i_think_it_is')
+                      option= t('.i_think_it_is_1')
+                      option= t('.i_think_it_is_1')
+                      option= t('.i_think_it_is_1')
                   - if !@response.errors[:reason].empty?
                     .pq-msg-error
-                      | Please give us information about why you reject the question
+                      = t('.please_give_us_information')
                   .form-group
                     = f.label :reason, 'Please explain why you reject the question, or if you are not the right person or Department, please tell us who we should contact'
                     = f.text_area  :reason,  class: 'form-control', rows: '10'
                     = render partial: 'shared/rejected_reasons', locals: {question: @question}
                 .form-group
-                  = submit_tag 'Save Response' , class: 'button'
+                  = submit_tag t('.save_response') , class: 'button'
     p
-      | If you have any queries please
+      = t('.if_you_have_any')
       a href="mailto:#{Settings.mail_reply_to}"  contact the PQ Team
   - else
     .row
       .col-md-10
-        h1 The question has been accepted and an email has been sent to the accepting officer with drafting instructions, please contact Parliamentary branch if you have any questions
+        h1= t('.the_question_has_been')

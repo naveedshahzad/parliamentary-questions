@@ -1,23 +1,23 @@
 #admin-ministers-details
-  h1 Minister details
+  h1= t('.minister_details')
   = render partial: "shared/flash_messages", flash: flash
-  h2 Name
+  h2= t('.name')
   p.text= @minister.name
-  h2 Title
+  h2= t('.title')
   p.text= @minister.title
-  h2 Status
+  h2= t('.status')
   = render partial: 'shared/status', object: @minister
-  h2 Contacts
+  h2= t('.contacts')
   div class="row"
     ul#admin-button-bar
-      li= link_to ('Add new contact'), new_minister_contact_withid_path(@minister), {class: 'button-secondary'}
+      li= link_to (t('.add_new_contact')), new_minister_contact_withid_path(@minister), {class: 'button-secondary'}
   table.table
     thead
       tr
-        th Description
-        th email
-        th phone
-        th#admin-status Status
+        th= t('.description')
+        th= t('.email')
+        th= t('.phone')
+        th#admin-status= t('.status')
         th
     tbody
       - @minister_contacts.each do |c|
@@ -26,5 +26,5 @@
           td= c.email
           td= c.phone
           td= render partial: 'shared/status', object: c
-          td.edit= link_to 'Edit', edit_minister_contact_path(c)
-  = link_to 'Return to the minister list', ministers_path, {class: 'admin-link'}
+          td.edit= link_to t('.edit'), edit_minister_contact_path(c)
+  = link_to t('.return_to_the_minister'), ministers_path, {class: 'admin-link'}

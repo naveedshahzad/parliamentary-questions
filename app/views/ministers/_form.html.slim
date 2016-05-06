@@ -19,10 +19,10 @@
           label.form-label for="minister_minister_contacts_attributes_0_phone"  Phone
           = ff.text_field :phone, {class: 'form-control'}
         .form-group
-          p.text Contact status
+          p.text= t('.contact_status')
           label.block-label for="minister_minister_contacts_attributes_0_deleted"
             = ff.check_box :deleted
-            | Inactive
+            = t('.inactive')
       .form-group
         p.text style=""  Minister status
         label.block-label for="minister_deleted"

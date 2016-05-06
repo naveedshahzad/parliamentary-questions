@@ -6,7 +6,7 @@
         label.form-label for="pq_uin"
           'Please enter the
           abbr title="Unique Identification Number" UIN
-          '  for the transferred PQ
+          => t('.for_the_transferred_pq')
 
         = f.text_field :uin, class:'form-control'
       .form-group
@@ -17,36 +17,36 @@
         .datetimepicker
           input#pq_dateforanswer.form-control.pq_dateforanswer name="pq[date_for_answer]" type="text" value=(@pq.date_for_answer.to_s) /
           span.fa.fa-calendar title="select a date"
-      p.text House
+      p.text= t('.house')
       .form-group.inline
         label.block-label for="pq_house_name_house_of_commons"
           = f.radio_button :house_name, 'House Of Commons'
-          | House of Commons
+          = t('.house_of_commons')
         label.block-label for="pq_house_name_house_of_lords"
           = f.radio_button :house_name, 'House Of Lords'
-          | House of Lords
+          = t('.house_of_lords')
       .form-group
         label.form-label for="pq_member_name"  Name of member
         = f.text_field :member_name, class:'form-control'
       .form-group
         label.form-label for="pq_member_constituency"  Member constituency
         = f.text_field :member_constituency, class:'form-control'
-      p.text Member has registered an interest in the question
+      p.text= t('.member_has_registered_an')
       .form-group.inline
         label.inline.block-label for="pq_registered_interest_false"
           = f.radio_button :registered_interest, 'false'
-          | No
+          = t('.no')
         label.inline.block-label for="pq_registered_interest_true"
           = f.radio_button :registered_interest, 'true'
-          | Yes
-      p.text Question type
+          = t('.yes')
+      p.text= t('.question_type')
       .form-group.inline
         label.block-label for="pq_question_type_ordinary"
           = f.radio_button :question_type, 'Ordinary'
-          | Ordinary
+          = t('.ordinary')
         label.block-label for="pq_question_type_namedday"
           = f.radio_button :question_type, 'NamedDay'
-          | Named day
+          = t('.named_day')
       .form-group
         label.form-label for="pq_transfer_in_ogd_id"  Transferred in from
         = f.collection_select(:transfer_in_ogd_id, @ogd_list, :id, :name, :include_blank => "Select Department")

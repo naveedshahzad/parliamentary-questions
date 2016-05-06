@@ -1,17 +1,17 @@
 = render partial: "shared/flash_messages", flash: flash
-h1 Watchlist members
+h1= t('.watchlist_members')
 #admin-wm-list
   div class="row"
     ul#admin-button-bar
-      li= link_to ('Send allocation info'), {controller: 'watchlist_send_emails', action: 'send_emails'}, {class: 'button', :onclick=> "ga('send', 'event', 'settings', 'watchlist', 'send allocation info');" }
-      li= link_to ('Add watchlist member'), new_watchlist_member_path, {class: 'button-secondary'}
-      li= link_to ('Watchlist preview'), {controller: 'watchlist_dashboard', action: 'preview'}, {class: 'button-secondary'}
+      li= link_to (t('.send_allocation_info')), {controller: 'watchlist_send_emails', action: 'send_emails'}, {class: 'buttont('.onclick_ga')send', 'event', 'settings', 'watchlist', 'send allocation info');" }
+      li= link_to (t('.add_watchlist_member')), new_watchlist_member_path, {class: 'button-secondary'}
+      li= link_to (t('.watchlist_preview')), {controller: 'watchlist_dashboard', action: 'preview'}, {class: 'button-secondary'}
   table.table
     thead
       tr
-        th Name
-        th Email
-        th#admin-status Status
+        th= t('.name')
+        th= t('.email')
+        th#admin-status= t('.status')
         th
     tbody
       - @watchlist_members.each do |watchlist_member|
@@ -19,4 +19,4 @@ h1 Watchlist members
           td= link_to watchlist_member.name, watchlist_member_path(watchlist_member)
           td= watchlist_member.email
           td= render partial: 'shared/status', object: watchlist_member
-          td.edit= link_to 'Edit', edit_watchlist_member_path(watchlist_member)
+          td.edit= link_to t('.edit'), edit_watchlist_member_path(watchlist_member)

@@ -6,9 +6,9 @@
         label.form-label for="press_desk_name"  Name
         = f.text_field :name, {class: 'form-control'}
       .form-group
-        p.text Status
+        p.text= t('.status')
         label.block-label for="press_desk_deleted"
           = f.check_box :deleted
-          | Inactive
+          = t('.inactive')
       .form-group
         = f.submit 'Save', :id => 'save', :class => 'button'

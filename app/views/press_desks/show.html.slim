@@ -1,13 +1,13 @@
 #admin-pd-details
-  h1 Press desk details
+  h1= t('.press_desk_details')
   = render partial: "shared/flash_messages", flash: flash
-  h2 Name
+  h2= t('.name')
   p.text= @press_desk.name
-  h2 Status
+  h2= t('.status')
   = render partial: 'shared/status', object: @press_desk
-  h2 Press officers
+  h2= t('.press_officers')
   ul
     - @press_desk.press_officers.each do |po|
       li= link_to(po.name,   controller: 'press_officers', action: 'show', id: po.id   )
-  = link_to 'Edit', edit_press_desk_path(@press_desk), {class: 'admin-link'}
-  = link_to 'Return to press desk list', press_desks_path, {class: 'admin-link'}
+  = link_to t('.edit'), edit_press_desk_path(@press_desk), {class: 'admin-link'}
+  = link_to t('.return_to_press_desk'), press_desks_path, {class: 'admin-link'}

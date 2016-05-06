@@ -8,15 +8,15 @@
   - if @pq.answer_submitted <= @answer_target
     p.text
       span.fa.fa-check-circle
-      | Answer submitted on time
+      = t('.answer_submitted_on_time')
   - elsif @pq.answer_submitted > @answer_target
     p.text
       span.fa.fa-thumbs-o-down
-      | Answer NOT submitted on time
+      = t('.answer_not_submitted_on')
 
 = render partial: 'gds_checkbox', locals: { value: @pq.library_deposit,
                                             field: 'library_deposit',
-                                            label: 'Library deposit' }
+                                            label: t('.library_deposit')}
 
 .form-group
   label.form-label for="pq_withdrawn"  Date PQ withdrawn
@@ -26,7 +26,6 @@
 
 = render partial: 'gds_checkbox', locals: { value: @pq.holding_reply_flag,
                                             field: 'holding_reply_flag',
-                                            label: 'Holding reply flag' }
+                                            label: t('.holding_reply_flag}')}
 - unless @pq.is_follow_up?
-  = link_to ("Create 'I will write' follow up"), {controller: 'i_will_write', action: 'create', id: @pq.uin}, {id: 'create_iww', class: 'button-secondary', title: 'Create an ''I will write'' follow up'}
-
+  = link_to (t('.create_i_will_write')), {controller: 'i_will_write', action: 'create', id: @pq.uin}, {id: 'create_iww', class: 'button-secondary', title: t('.create_an_i_will_write_followup')}

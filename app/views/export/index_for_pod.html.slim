@@ -1,10 +1,10 @@
 #csv-export
   h1
     abbr title="Private Office Directorate" POD 
-    ' Export PQs to
+    => t('.export_pqs_to')
     abbr title="Comma Separated Values" CSV
   = render partial: 'shared/flash_messages'
-  h2 Select the range of dates to do the export
+  h2= t('.select_the_range_of')
   = form_tag controller: 'export', action: 'csv_for_pod' do
     fieldset
       .form-group
@@ -18,4 +18,4 @@
           input#date_to.form-control name="date_to" type="text" value=Date.today.to_s(:date) /
           span.fa.fa-calendar title="select a date"
     .form-group
-      = submit_tag 'Download CSV' , class: 'button' ,  :onclick=> "ga('send', 'event', 'tasks', 'download', 'pod csv')"
+      = submit_tag t('.download_csv') ,  :onclick=> "ga('send', 'event', 'tasks', 'download', 'pod csv')"

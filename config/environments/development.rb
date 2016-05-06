@@ -46,7 +46,7 @@ ParliamentaryQuestions::Application.configure do
 
   config.after_initialize do
     sending_host = ENV['SENDING_HOST'] || 'localhost'
-    ActionMailer::Base.delivery_method = :sendmail
+    ActionMailer::Base.delivery_method = :smtp
     ActionMailer::Base.default :from => Settings.mail_from
     ActionMailer::Base.default :reply_to => Settings.mail_reply_to
     ActionMailer::Base.default_url_options = { host: sending_host, protocol: 'http', port: '3000'}

@@ -1,8 +1,7 @@
 p.br.space-before-20
-  strong Link expired
+  strong= t('.link_expired')
 
 p.br.space-before
-  | The time allocated for you to accept or reject this question has expired.  Please 
+  = t('.the_time_allocated_for')
   a href="mailto:#{Settings.mail_reply_to}"  contact the PQ team
-  | &nbsp;to get the question reassigned.
-
+  =< t('.to_get_the_question')
