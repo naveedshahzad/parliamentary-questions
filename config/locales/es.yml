@@ -354,354 +354,354 @@ es:
       version: 'Version:'
       built_on: 'construido en:'
       build_tag: 'Build tag:'
-      latest_git_commit: 'Latest git commit:'
-      emails: Emails
+      latest_git_commit: 'Última git commit:'
+      emails: Correos electrónicos
       number_waiting: 'Número de espera:'
       number_abandoned: 'número de abandonadas:'
-      number_of_unanswered_tokens: 'Number of unanswered tokens:'
-      questions_import: Questions Import
+      number_of_unanswered_tokens: 'Número de tokens no contestadas:'
+      questions_import: Preguntas importadas
       last_run_at: 'Last run at:'
-      number_imported_today: 'Number imported today:'
-      number_imported_this_week: 'Number imported this week:'
-      number_imported_this_month: 'Number imported this month:'
+      number_imported_today: 'Número importados hoy:'
+      number_imported_this_week: 'Número importado esta semana:'
+      number_imported_this_month: 'Número importado este mes:'
       json: {}
   minister_contacts:
     form:
-      inactive: Inactive
+      inactive: INACTIVO
     create:
-      add_contact_to_minister: Add contact to %{minister}
+      add_contact_to_minister: Agregar contacto a %{minister}
     edit:
-      edit_minister_contact: Edit minister contact
-      back: Back
+      edit_minister_contact: Editar contacto ministro
+      back: atrás
     new:
-      new_contact_for_minister: New contact for %{minister}
-      back: Back
+      new_contact_for_minister: Nuevo contacto para %{minister}
+      back: atrás
   ministers:
     form:
-      contact_status: Contact status
-      inactive: Inactive
+      contact_status: estado de contacto
+      inactive: INACTIVO
     edit:
-      edit_minister: Edit minister
-      return_to_minister_list: Return to Minister list
+      edit_minister: Editar ministro
+      return_to_minister_list: Volver a la lista de Ministro
     index:
-      ministers: Ministers
-      add_minister: Add minister
-      name: Name
-      title: Title
-      status: Status
-      edit: Edit
+      ministers: Los Ministros
+      add_minister: Agregar ministro
+      name: Nombre
+      title: título
+      status: estado
+      edit: Editar
     new:
-      add_minister: Add minister
-      return_to_minister_list: Return to minister list
+      add_minister: Agregar ministro
+      return_to_minister_list: Volver a la lista de ministro
     show:
-      minister_details: Minister details
-      name: Name
-      title: Title
-      status: Status
-      contacts: Contacts
-      add_new_contact: Add new contact
-      description: Description
+      minister_details: Detalles de ministro
+      name: Nombre
+      title: título
+      status: estado
+      contacts: contactos
+      add_new_contact: Agregar nuevo contacto
+      description: Descripción
       email: email
-      phone: phone
-      edit: Edit
-      return_to_the_minister: Return to the minister list
+      phone: teléfono
+      edit: Editar
+      return_to_the_minister: Volver a la lista de ministros
   ogds:
     form:
-      status: Status
-      inactive: Inactive
+      status: estado
+      inactive: INACTIVO
     edit:
-      edit_government_department: Edit Government Department
-      return_to_other_government: Return to Other Government Department list
+      edit_government_department: Editar secretarias de despacho
+      return_to_other_government: Regresar a otra lista de secretarias de despacho
     index:
-      other_government_departments: Other Government Departments
-      add_government_department: Add Government Department
-      name: Name
-      acronym: Acronym
-      status: Status
-      edit: Edit
+      other_government_departments: Otras secretarias de despacho
+      add_government_department: Agregar secretaria de despacho
+      name: Nombre
+      acronym: acrónimo
+      status: estado
+      edit: Editar
     new:
-      add_government_department: Add Government Department
-      return_to_other_government: Return to Other Government Department list
+      add_government_department: Agregar secretaria de despacho
+      return_to_other_government: Volver a otra lista de secretarias de despacho
     show:
-      government_department_details: Government Department details
-      name: Name
-      acronym: Acronym
-      status: Status
-      edit: Edit
-      return_to_other_government: Return to Other Government Department list
+      government_department_details: Detalles de secretaria de despacho
+      name: Nombre
+      acronym: acrónimo
+      status: estado
+      edit: Editar
+      return_to_other_government: Regresar a otra lista de secretarias de despacho
   pqs:
     answer:
-      answer_submitted_on_time: Answer submitted on time
-      answer_not_submitted_on: Answer NOT submitted on time
-      library_deposit: "'Library deposit'"
-      holding_reply_flag: "'Holding reply flag'"
-      create_i_will_write: Create 'I will write' follow up
-      create_an: 'Create an '
+      answer_submitted_on_time: Respuesta presentada a tiempo
+      answer_not_submitted_on: Respuesta no se presentó a tiempo
+      library_deposit: "'Depósito Biblioteca'"
+      holding_reply_flag: "'Sostiene el indicador respuesta'"
+      create_i_will_write: Crear seguimiento 'escribiré'
+      create_an: 'Crear una '
     com_data:
-      internal_deadline_render: Internal deadline%{render}}
-      name_of_action_officer: Name of Action Officer
-      send_a_reminder_email: Send a reminder email to do the draft
-      manually_reject_this_action: Manually reject this action officer
-      reject_the_question_manually: Reject the question manually
-      email_of_action_officer: Email of Action Officer
-      phone_of_action_officer: Phone of Action Officer
-      division_of_action_officer: Division of Action Officer
-      directorate_of_action_officer: Directorate of Action Officer
-      deputy_director: Deputy director
-      press_desk: Press Desk
-      send_an_accept_reject: Send an accept/reject reminder email
-      not_allocated: Not allocated
+      internal_deadline_render: Plazo Interno%{render}}
+      name_of_action_officer: Nombre oficial de acción
+      send_a_reminder_email: Enviar un recordatorio por correo electrónico para realizar el proyecto
+      manually_reject_this_action: rechazar esta acción oficial manualmente
+      reject_the_question_manually: Rechazar la pregunta manualmente
+      email_of_action_officer: Email del oficial de acción
+      phone_of_action_officer: Teléfono del oficial de acción
+      division_of_action_officer: División del oficial de acción
+      directorate_of_action_officer: Directorio del oficial de acción
+      deputy_director: Director Adjunto
+      press_desk: Oficina de Prensa
+      send_an_accept_reject: Enviar un correo electrónico de recordatorio de aceptar/rechazar
+      not_allocated: No asignada
     fc_data:
-      finance_interest: "'Finance interest' }"
+      finance_interest: "'Interes financiero' }"
     minister_check:
-      answering_minister_query: "'Answering minister query' }"
-      policy_minister_query: "'Policy minister query'"
+      answering_minister_query: "'Respondiendo a la consulta ministro' }"
+      policy_minister_query: "'consulta ministro de Política'"
     pod_check:
-      date_sent_to: Date sent to
+      date_sent_to: Fecha enviada a
       pod_query_flag: "'POD query flag'"
-      date_cleared_by: Date cleared by
+      date_cleared_by: Fecha despejada por
     pq_data:
-      house: House
-      tabling_member: Tabling member
-      question_type: Question type
-      question_tabled_date: Question tabled date
-      member_has_registered: "* Member has registered an interest in the Question."
-      transferred_in_from_pq: Transferred in from %{pq} on %{pq1}
-      question: Question
+      house: Asamblea
+      tabling_member: Miembro expositor
+      question_type: Tipo de Pregunta
+      question_tabled_date: Fecha de presentación de la Pregunta
+      member_has_registered: "* Miembro ha registrado un interés en la pregunta."
+      transferred_in_from_pq: transferido desde %{pq} en %{pq1}
+      question: Pregunta
       round_robin: "'Round robin'"
     pq_draft:
-      date_pq_accepted_by: Date PQ accepted by action officer
-      i_will_write: "'I will write' }"
-      pq_correction_received: "'Pq correction received'"
+      date_pq_accepted_by: Fecha de la pregunta aceptada por el oficial de acción
+      i_will_write: "'Escribiré' }"
+      pq_correction_received: "'Correción de pregunta recibida'"
     pq_header:
-      named_day: Named day
-      transferred_in: Transferred in
-      i_will_write: I will write
+      named_day: Nombradas hoy
+      transferred_in: Transferida en
+      i_will_write: Voy a escribir
     trim_link:
-      options: Options
-      open_trim_link: Open trim link
-      trim_link_deleted: Trim link deleted
+      options: Opciones
+      open_trim_link: Abrir enlace trim
+      trim_link_deleted: Enlace Trim eliminado
     show:
-      pq_details: PQ Details
-      trim_link: Trim link
-      finance_check: Finance check
-      pq_commission: PQ commission
-      pq_draft: PQ draft
-      check: check
-      minister_check: Minister check
+      pq_details: Detalles de Pregunta
+      trim_link: Enlace Trim
+      finance_check: Comprobación de finanzas
+      pq_commission: Comisión sobre la Pregunta
+      pq_draft: Proyecto de Pregunta
+      check: comprobar
+      minister_check: Verificación ministerial
   press_desks:
     form:
-      status: Status
-      inactive: Inactive
+      status: Estado
+      inactive: INACTIVO
     edit:
-      edit_press_desk: Edit press desk
-      return_to_press_desk: Return to press desk list
+      edit_press_desk: Editar oficina de prensa
+      return_to_press_desk: Volver a lista de oficina de prensa
     index:
       press_desks: Press desks
-      add_press_desk: Add press desk
-      name: Name
-      press_officers: Press Officers
-      status: Status
-      edit: Edit
+      add_press_desk: Agregar press desk
+      name: Nombre
+      press_officers: Oficiales de prensa
+      status: estado
+      edit: Editar
     new:
-      add_press_desk: Add press desk
-      return_to_press_desk: Return to press desk list
+      add_press_desk: Añadir oficina de prensa
+      return_to_press_desk: Volver a lista de oficina de prensa
     show:
-      press_desk_details: Press desk details
-      name: Name
-      status: Status
-      press_officers: Press officers
-      edit: Edit
-      return_to_press_desk: Return to press desk list
+      press_desk_details: Detalles Oficina de Prensa
+      name: Nombre
+      status: estado
+      press_officers: oficiales de prensa
+      edit: Editar
+      return_to_press_desk: Volver a lista de oficina de prensa
   press_officers:
     form:
-      status: Status
-      inactive: Inactive
+      status: estado
+      inactive: INACTIVO
     edit:
-      edit_press_officer: Edit press officer
-      return_to_press_officer: Return to press officer list
+      edit_press_officer: Editar oficial de prensa
+      return_to_press_officer: Volver a la lista oficial de prensa
     index:
-      press_officers: Press officers
-      add_press_officer: Add press officer
-      name: Name
-      press_desk: Press Desk
-      status: Status
-      edit: Edit
+      press_officers: oficiales de prensa
+      add_press_officer: Agregar oficial de prensa
+      name: Nombre
+      press_desk: Oficina de Prensa
+      status: estado
+      edit: Editar
     new:
-      add_press_officer: Add press officer
-      return_to_press_officer: Return to press officer list
+      add_press_officer: Agregar oficial de prensa
+      return_to_press_officer: Volver a la lista oficial de prensa
     show:
-      press_officer_details: Press officer details
-      name: Name
+      press_officer_details: Detalles oficial de prensa
+      name: Nombre
       email: Email
-      status: Status
-      edit: Edit
-      return_to_press_officer: Return to press officer list
+      status: estado
+      edit: Editar
+      return_to_press_officer: Volver a la lista oficial de prensa
   preview:
     index:
-      new_parliamentary_questions_to: New parliamentary questions to be allocated
-        today (%{now})
+      new_parliamentary_questions_to: Nuevas preguntas parlamentarias a asignarse
+        hoy (%{now})
       questions: "%{questions}"
-      new_parliamentary_questions: new parliamentary questions
-      named_day: Named day
-      transferred_in: Transferred in
-      ordinary: Ordinary
-      asked_by: 'Asked by:'
-      constituency: 'Constituency:'
+      new_parliamentary_questions: nuevas preguntas parlamentarias
+      named_day: Nombradas hoy
+      transferred_in: transferido en
+      ordinary: Ordinaria
+      asked_by: 'Preguntado por:'
+      constituency: 'Distrito electoral:'
       n_a: N/A
-      filter_by: 'Filter by:'
-      contains: Contains
-      question_type: Question type
+      filter_by: 'Filtrar por:'
+      contains: Contiene
+      question_type: Tipo de pregunta
   reports:
     filter_all:
-      pq_filter: PQ filter
-      please_select_a_filter: Please select a filter option
+      pq_filter: Filtro de Preguntas
+      please_select_a_filter: Por favor seleccione una opción de filtro
       reset: Reset
-      report: Report
+      report: Informe
     report:
-      progress: Progress
+      progress: Progreso
   shared:
     allocation_list:
-      accepted: Accepted
-      rejected: Rejected
-      no_response: No response
+      accepted: aceptado
+      rejected: Rechazado
+      no_response: No hay respuesta
     ao_reminder_link:
-      send_a_reminder_email: Send a reminder email to do the draft
-      send_an_accept_reject: Send an accept/reject reminder email
+      send_a_reminder_email: Enviar un recordatorio por correo electrónico para realizar el proyecto
+      send_an_accept_reject: Enviar un correo electrónico de recordatorio de aceptar/rechazar
     commissioned:
-      commissioned_successfully: commissioned successfully
+      commissioned_successfully: encargado correctamente
     navigation:
       toggle_navigation: Toggle navigation
-      new: New
-      in_progress: In progress
-      backlog: Backlog
-      reports: Reports
-      minister_report: Minister report
-      press_desk_report: Press desk report
-      settings: Settings
-      sign_out: Sign out
+      new: nueva
+      in_progress: En curso
+      backlog: atraso
+      reports: Informes
+      minister_report: Informe ministro
+      press_desk_report: Informe Oficina de Prensa
+      settings: Ajustes
+      sign_out: Salir
     question_assigned:
-      allocation: 'Allocation:'
-      accepted: Accepted
-      rejected: Rejected
-      display_reason: Display Reason
-      no_response: No response
+      allocation: 'Asignación:'
+      accepted: aceptado
+      rejected: Rechazado
+      display_reason: mostrar la razón
+      no_response: No hay respuesta
     rejected_reasons:
-      rejected_at_r: 'rejected at: %{r}'
+      rejected_at_r: 'rechazada en: %{r}'
     trim_link:
-      open_trim_link: Open trim link
-      choose_trim_file: Choose Trim file
-      upload: Upload
-      cancel: Cancel
+      open_trim_link: Abrir enlace trim
+      choose_trim_file: Seleccion archivo TRIM
+      upload: cargue
+      cancel: Cancelar
     mailer:
       email_signature:
-        the_pq_team: The PQ Team
-        parliamentary_branch: Parliamentary Branch
+        the_pq_team: El equipo de PQ
+        parliamentary_branch: Rama parlamentaria
         9_25_ministry_of: 9.25, Ministry of Justice, 102 Petty France, SW1H 9AJ
         t_0203_334_6155: 'T: 0203 334 6155'
         e: 'E:'
-        the_content_is_best: The content is best viewed in Firefox browser.
-        for_any_technical_issues: For any technical issues, e.g. broken links,
+        the_content_is_best: El contenido se ve mejor en el navegador Firefox.
+        for_any_technical_issues: Para cualquier problema técnico, por ejemplo, enlaces rotos,
       email_signature_plain:
         text:
-          the_pq_team: The PQ Team
+          the_pq_team: El equipo PQ
     token_expired:
-      link_expired: Link expired
-      the_time_allocated_for: The time allocated for you to accept or reject this
-        question has expired. Please
-      to_get_the_question: to get the question reassigned.
+      link_expired: Enlace caducado
+      the_time_allocated_for: El tiempo asignado para que acepte o rechace esta
+        Pregunta ha caducado. Por favor
+      to_get_the_question: para ir a la pregunta reasignada.
     token_invalid:
-      invalid_link: Invalid Link
-      this_link_is_invalid: This link is invalid. Please check the original email
-        and ensure you have copied and pasted the link correctly.
+      invalid_link: enlace no válido
+      this_link_is_invalid: Este enlace no es válido. Por favor revise el correo electrónico original
+        Y asegúrese de que ha copiado y pegado el enlace correctamente.
   statistics:
     index:
-      statistics: Statistics
-      analysis: Analysis
-      description: Description
+      statistics: Estadísticas
+      analysis: Análisis
+      description: Descripción
     report:
-      no_results_available: No results available |
+      no_results_available: No hay resultados disponibles  |
     stages_time:
-      statistics: Statistics
-      question_duration_in_phases: Question duration in phases
-      average_time_in_phase: Average time in phase
+      statistics: Estadísticas
+      question_duration_in_phases: Duración de preguntas en fases
+      average_time_in_phase: Tiempo promedio en la fase
   transferred:
     form:
-      for_the_transferred_pq: for the transferred PQ
+      for_the_transferred_pq: para la transferencia de la Pregunta
       house: House
-      house_of_commons: House of Commons
-      house_of_lords: House of Lords
-      member_has_registered_an: Member has registered an interest in the question
+      house_of_commons: Cámara de los Comunes
+      house_of_lords: Cámara de los Lores
+      member_has_registered_an: Miembro ha registrado un interés en la pregunta
       'no': 'No'
-      'yes': 'Yes'
-      question_type: Question type
-      ordinary: Ordinary
-      named_day: Named day
+      'yes': 'Si'
+      question_type: tipo de pregunta
+      ordinary: Ordinaria
+      named_day: Nombrada hoy
     new:
-      create_a_transferred_pq: Create a transferred PQ
+      create_a_transferred_pq: Crear una Pregunta de Plenaria
   users:
     edit:
-      edit_user_user: 'Edit user: %{user}'
+      edit_user_user: 'Editar usuario: %{user}'
       status: 'Status:'
-      inactive: Inactive
-      return_to_user_list: Return to user list
+      inactive: INACTIVO
+      return_to_user_list: Volver a lista de usuarios
     index:
-      users: Users
-      invite_new_user: Invite new user
-      name: Name
-      role: Role
-      last_sign_in: Last Sign in
-      status: Status
-      never_active: never active
-      edit: Edit
+      users: usuarios
+      invite_new_user: Invitar a nuevo usuario
+      name: Nombre
+      role: Rol
+      last_sign_in: Último inicio de sesión
+      status: estado
+      never_active: Nunca activo
+      edit: Editar
     invitations:
       edit:
-        return_to_users: Return to Users
+        return_to_users: Volver a Usuarios
       new:
-        return_to_users: Return to Users
+        return_to_users: Volver a Usuarios
     mailer:
       invitation_instructions:
-        it_is_recommended_that: It is recommended that you use Firefox web browser
-          to access PQ Tracker. Using Internet Explorer may cause performance issues.
+        it_is_recommended_that: Se recomienda utilizar el navegador web Firefox
+          Para acceder a PQ Tracker. Usando Internet Explorer puede causar problemas de rendimiento.
     show:
-      user_details: User details
-      name: Name
+      user_details: Detalles del usuario
+      name: Nombre
       email: Email
-      role: Role
-      last_active: Last active
-      invited_by: Invited by
-      edit: Edit
-      return_to_user_list: Return to user list
+      role: Rol
+      last_active: Último activo
+      invited_by: Invitado por
+      edit: Editar
+      return_to_user_list: Volver a lista de usuarios
   watchlist_dashboard:
     index:
-      questions_allocated_date: Questions Allocated %{Date}
-      date_for_answer: Date For Answer
-      internal_deadline: Internal deadline
-      allocation: Allocation
+      questions_allocated_date: Preguntas asignadas %{Date}
+      date_for_answer: Fecha de respuesta
+      internal_deadline: fecha límite interna
+      allocation: Asignación
   watchlist_members:
     form:
-      status: Status
-      inactive: Inactive
+      status: estado
+      inactive: Inactivo
     edit:
-      edit_watchlist_member: Edit watchlist member
-      return_to_watchlist_member: Return to watchlist member list
+      edit_watchlist_member: Editar miembro de la lista de vigilancia
+      return_to_watchlist_member: Volver a la lista de miembros de lista de observación
     index:
-      watchlist_members: Watchlist members
-      send_allocation_info: Send allocation info
+      watchlist_members: Miembros de la lista de observación
+      send_allocation_info: Enviar información de asignación
       onclick_ga: ', :onclick=> "ga('
-      add_watchlist_member: Add watchlist member
-      watchlist_preview: Watchlist preview
-      name: Name
+      add_watchlist_member: Agregar miembro de la lista de vigilancia
+      watchlist_preview: Watchlist previsualizacion
+      name: Nombre
       email: Email
-      status: Status
-      edit: Edit
+      status: estado
+      edit: Editar
     new:
-      add_watchlist_member: Add watchlist member
-      return_to_watchlist_member: Return to watchlist member list
+      add_watchlist_member: Agregar miembro de la lista de vigilancia
+      return_to_watchlist_member: Volver a la lista de miembros de lista de observación
     show:
-      watchlist_member_details: Watchlist member details
-      name: Name
+      watchlist_member_details: Detalles miembros Lista de Vigilancia
+      name: Nombre
       email: Email
-      status: Status
-      edit: Edit
-      return_to_watchlist_member: Return to watchlist member list
+      status: estado
+      edit: Editar
+      return_to_watchlist_member: Volver a la lista de miembros de lista de observación

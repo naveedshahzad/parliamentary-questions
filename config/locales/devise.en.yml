@@ -2,117 +2,117 @@
 en:
   devise:
     confirmations:
-      confirmed: Your account was successfully confirmed.
-      send_instructions: You will receive an email with instructions about how to
-        confirm your account in a few minutes.
-      send_paranoid_instructions: If your email address exists in our database, you
-        will receive an email with instructions about how to confirm your account
-        in a few minutes.
+      confirmed: Su cuenta ha sido confirmada.
+      send_instructions: Usted recibirá un correo electrónico con instrucciones sobre cómo
+        confirmar su cuenta en pocos minutos.
+      send_paranoid_instructions: Si su dirección de correo electrónico existe en nuestra base de datos, usted
+        Recibirá un correo electrónico con instrucciones sobre cómo confirmar tu cuenta
+        en pocos minutos.
       new:
-        resend_confirmation_instructions: Resend confirmation instructions
+        resend_confirmation_instructions: Reenviar instrucciones de confirmación
     failure:
-      already_authenticated: You are already signed in.
-      inactive: Your account is not currently active.
-      invalid: Invalid email or password
-      locked: Your account is locked.
-      last_attempt: You have one more attempt before your account will be locked.
-      not_found_in_database: Invalid email or password
-      timeout: Your session expired. Please sign in again to continue.
+      already_authenticated: Ya has iniciado sesión.
+      inactive: Tu cuenta no está activa.
+      invalid: dirección de correo electrónico o contraseña no válidos
+      locked: Su cuenta está bloqueada.
+      last_attempt: Dispone de un intento más antes de que se bloquee su cuenta.
+      not_found_in_database: Dirección de correo electrónico o contraseña no válidos
+      timeout: Tu sesión ha caducado. Inicie sesión de nuevo para continuar.
       unauthenticated: ''
-      unconfirmed: You have to confirm your account before continuing.
+      unconfirmed: tienes que confirmar tu cuenta antes de continuar.
     mailer:
       confirmation_instructions:
-        subject: Confirmation instructions
-        welcome_email: Welcome %{email}!
-        you_can_confirm_your: 'You can confirm your account email through the link
+        subject: Instrucciones de confirmación
+        welcome_email: Bienvenido %{email}!
+        you_can_confirm_your: 'puedes confirmar tu dirección de correo electrónico de la cuenta a través del link
           below:'
-        confirm_my_account: Confirm my account
+        confirm_my_account: confirmar mi cuenta
       reset_password_instructions:
-        subject: Reset password instructions
-        hello_resource: Hello %{resource}!
-        someone_has_requested_a: Someone has requested a link to change your password.
-          You can do this through the link below.
-        change_my_password: Change my password
-        if_you_didn_t: If you didn't request this, please ignore this email.
-        your_password_won_t: Your password won't change until you access the link
-          above and create a new one.
+        subject: instrucciones para restablecer la contraseña
+        hello_resource: Hola %{resource}!
+        someone_has_requested_a: alguien ha solicitado un enlace para cambiar su contraseña.
+          Puede hacerlo a través del siguiente enlace.
+        change_my_password: Cambiar mi contraseña
+        if_you_didn_t: Si no lo has solicitado, ignora este mensaje.
+        your_password_won_t: Tu contraseña no cambiará hasta que acceda al enlace
+          anterior y crear una nueva.
       unlock_instructions:
-        subject: Unlock Instructions
-        hello_resource: Hello %{resource}!
-        your_account_has_been: Your account has been locked due to an excessive number
-          of unsuccessful sign in attempts.
-        click_the_link_below: 'Click the link below to unlock your account:'
-        unlock_my_account: Unlock my account
+        subject: Instrucciones de desbloqueo
+        hello_resource: Hola %{resource}!
+        your_account_has_been: Su cuenta ha sido bloqueada debido a un número excesivo
+          de intentos.
+        click_the_link_below: 'Haga clic en el siguiente enlace para desbloquear su cuenta:'
+        unlock_my_account: Desbloquear mi cuenta
     omniauth_callbacks:
-      failure: Could not authenticate you from %{kind} because "%{reason}".
-      success: Successfully authenticated from %{kind} account.
+      failure: No se pudo autenticar de %{kind} por "%{reason}".
+      success: autenticado correctamente desde %{kind} cuenta.
     passwords:
-      no_token: You can't access this page without coming from a password reset email.
-        If you do come from a password reset email, please make sure you used the
-        full URL provided.
-      send_instructions: You will receive an email with instructions on how to reset
-        your password in a few minutes.
-      send_paranoid_instructions: If your email address exists in our database, you
-        will receive a password recovery link at your email address in a few minutes.
-      updated: Your password was changed successfully. You are now signed in.
-      updated_not_active: Your password was changed successfully.
+      no_token: no se puede acceder a esta página sin venir desde un mensaje de correo electrónico de restablecimiento de contraseña.
+        Si no proceden de un correo electrónico de restablecimiento de contraseña, asegúrese de que utiliza la
+        Dirección URL completa proporcionada.
+      send_instructions: Usted recibirá un correo electrónico con instrucciones sobre cómo restablecer
+        Tu contraseña en unos pocos minutos.
+      send_paranoid_instructions: Si su dirección de correo electrónico existe en nuestra base de datos,
+        Recibirá un enlace de recuperación de la contraseña a su dirección de correo electrónico en unos minutos.
+      updated: La contraseña se ha cambiado correctamente. Ahora estás registrado.
+      updated_not_active: la contraseña se ha cambiado correctamente.
       edit:
-        change_your_password: Change your password
+        change_your_password: Cambiar su contraseña
       new:
-        forgot_your_password: Forgot your password?
+        forgot_your_password: ¿Has olvidado tu contraseña?
     registrations:
-      destroyed: Bye! Your account was successfully cancelled. We hope to see you
-        again soon.
-      signed_up: Welcome! You have signed up successfully.
-      signed_up_but_inactive: You have signed up successfully. However, we could not
-        sign you in because your account is not yet activated.
-      signed_up_but_locked: You have signed up successfully. However, we could not
-        sign you in because your account is locked.
-      signed_up_but_unconfirmed: A message with a confirmation link has been sent
-        to your email address. Please open the link to activate your account.
-      update_needs_confirmation: You updated your account successfully, but we need
-        to verify your new email address. Please check your email and click on the
-        confirm link to finalize confirming your new email address.
-      updated: You updated your account successfully.
+      destroyed: Adiós! Su cuenta ha sido cancelada. Esperamos verte
+        Pronto de nuevo.
+      signed_up: Welcome! Te has suscrito correctamente.
+      signed_up_but_inactive: Se ha suscrito correctamente. Sin embargo, no podríamos
+        Iniciar sesión en su cuenta, porque aún no está activada.
+      signed_up_but_locked: Usted ha firmado correctamente. Sin embargo, no podríamos
+        Iniciar sesión en su cuenta porque está bloqueado.
+      signed_up_but_unconfirmed: un mensaje con un vínculo de confirmación ha sido enviado
+        A su dirección de correo electrónico. Por favor abra el enlace para activar su cuenta.
+      update_needs_confirmation: Si actualiza su cuenta correctamente, pero necesitamos
+        verificar tu dirección de correo electrónico nueva. Compruebe su correo electrónico y haga clic en el
+        enlace de confirmación para finalizar confirmando tu nueva dirección de correo electrónico.
+      updated: Actualizó su cuenta correctamente.
       edit:
-        edit_resource_name: Edit %{resource_name}
-        currently_waiting_confirmation_for: 'Currently waiting confirmation for: %{resource}'
-        leave_blank_if: "(leave blank if you don't want to change it)"
-        we_need_your: "(we need your current password to confirm your changes)"
-        cancel_my_account: Cancel my account
-        back: Back
+        edit_resource_name: Editar %{resource_name}
+        currently_waiting_confirmation_for: 'Actualmente a la espera de confirmación: %{resource}'
+        leave_blank_if: "(deje en blanco si no desea cambiarlo)"
+        we_need_your: "(necesitamos su contraseña actual para confirmar sus cambios)"
+        cancel_my_account: cancelar mi cuenta
+        back: atrás
       new:
-        sign_up: Sign up
+        sign_up: Regístrese
     sessions:
       signed_in: ''
-      signed_out: Signed out successfully.
+      signed_out: Cerró sesión correctamente.
       new:
-        sign_in: Sign in
-        remember_me: Remember me
+        sign_in: Iniciar sesión
+        remember_me: Recordarme
     unlocks:
-      send_instructions: You will receive an email with instructions about how to
-        unlock your account in a few minutes.
-      send_paranoid_instructions: If your account exists, you will receive an email
-        with instructions about how to unlock it in a few minutes.
-      unlocked: Your account has been unlocked successfully. Please sign in to continue.
+      send_instructions: Usted recibirá un correo electrónico con instrucciones sobre cómo
+        desbloquear su cuenta en pocos minutos.
+      send_paranoid_instructions: Si su cuenta existe, recibirá un correo electrónico
+        con instrucciones sobre cómo desbloquear en pocos minutos.
+      unlocked: Tu cuenta se ha desbloqueado. Por favor, iniciar sesión para continuar.
       new:
-        resend_unlock_instructions: Resend unlock instructions
+        resend_unlock_instructions: Reenviar instrucciones de desbloqueo
     shared:
       links:
-        sign_in: Sign in
-        sign_up: Sign up
-        forgot_your_password: Forgot your password?
-        didn_t_receive_confirmation: Didn't receive confirmation instructions?
-        didn_t_receive_unlock: Didn't receive unlock instructions?
-        sign_in_with_provider: 'Sign in with # provider.to_s.titleize '
+        sign_in: Iniciar sesión
+        sign_up: Regístrese
+        forgot_your_password: ¿Has olvidado tu contraseña?
+        didn_t_receive_confirmation: No recibio instrucciones de confirmación?
+        didn_t_receive_unlock: No recibio instrucciones de desbloqueo?
+        sign_in_with_provider: 'Inicia sesión con # provider.to_s.titleize '
   errors:
     messages:
-      already_confirmed: was already confirmed, please try signing in
-      confirmation_period_expired: needs to be confirmed within %{period}, please
-        request a new one
-      expired: has expired, please request a new one
-      not_found: not found
-      not_locked: was not locked
+      already_confirmed: Ya estaba confirmado, intente iniciar sesión
+      confirmation_period_expired: necesita ser confirmada dentro de  %{period}, por favor
+        Solicitar una nueva
+      expired: ha caducado, solicite una nueva
+      not_found: no se ha encontrado
+      not_locked: No estaba bloqueada
       not_saved:
-        one: '1 error prohibited this %{resource} from being saved:'
-        other: "%{count} errors prohibited this %{resource} from being saved:"
+        one: '1 error prohibido este %{resource} siendo guardado:'
+        other: "%{count} errores prohibido este %{resource} de ser guardado:"
