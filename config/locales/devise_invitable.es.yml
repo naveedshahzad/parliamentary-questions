@@ -15,7 +15,7 @@ es:
     mailer:
       invitation_instructions:
         subject: 'instrucciones de invitación'
-        someone_invited_you: 'Ustede ha sido invitado a usar el Rastreador PQ'.'
+        someone_invited_you: 'Ustede ha sido invitado a usar el Rastreador PQ.'
         accept: 'aceptar la invitación'
         setup: "Usted tendrá que crear su propia contraseña como parte de la configuración de la cuenta."
         ignore: "Si usted no desea aceptar la invitación "
