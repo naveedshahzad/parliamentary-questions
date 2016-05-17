@@ -1,0 +1,118 @@
+---
+es:
+  devise:
+    confirmations:
+      confirmed: Su cuenta ha sido confirmada.
+      send_instructions: Usted recibirá un correo electrónico con instrucciones sobre cómo
+        confirmar su cuenta en pocos minutos.
+      send_paranoid_instructions: Si su dirección de correo electrónico existe en nuestra base de datos, usted
+        Recibirá un correo electrónico con instrucciones sobre cómo confirmar tu cuenta
+        en pocos minutos.
+      new:
+        resend_confirmation_instructions: Reenviar instrucciones de confirmación
+    failure:
+      already_authenticated: Ya has iniciado sesión.
+      inactive: Tu cuenta no está activa.
+      invalid: dirección de correo electrónico o contraseña no válidos
+      locked: Su cuenta está bloqueada.
+      last_attempt: Dispone de un intento más antes de que se bloquee su cuenta.
+      not_found_in_database: Dirección de correo electrónico o contraseña no válidos
+      timeout: Tu sesión ha caducado. Inicie sesión de nuevo para continuar.
+      unauthenticated: ''
+      unconfirmed: tienes que confirmar tu cuenta antes de continuar.
+    mailer:
+      confirmation_instructions:
+        subject: Instrucciones de confirmación
+        welcome_email: Bienvenido %{email}!
+        you_can_confirm_your: 'puedes confirmar tu dirección de correo electrónico de la cuenta a través del link
+          below:'
+        confirm_my_account: confirmar mi cuenta
+      reset_password_instructions:
+        subject: instrucciones para restablecer la contraseña
+        hello_resource: Hola %{resource}!
+        someone_has_requested_a: alguien ha solicitado un enlace para cambiar su contraseña.
+          Puede hacerlo a través del siguiente enlace.
+        change_my_password: Cambiar mi contraseña
+        if_you_didn_t: Si no lo has solicitado, ignora este mensaje.
+        your_password_won_t: Tu contraseña no cambiará hasta que acceda al enlace
+          anterior y crear una nueva.
+      unlock_instructions:
+        subject: Instrucciones de desbloqueo
+        hello_resource: Hola %{resource}!
+        your_account_has_been: Su cuenta ha sido bloqueada debido a un número excesivo
+          de intentos.
+        click_the_link_below: 'Haga clic en el siguiente enlace para desbloquear su cuenta:'
+        unlock_my_account: Desbloquear mi cuenta
+    omniauth_callbacks:
+      failure: No se pudo autenticar de %{kind} por "%{reason}".
+      success: autenticado correctamente desde %{kind} cuenta.
+    passwords:
+      no_token: no se puede acceder a esta página sin venir desde un mensaje de correo electrónico de restablecimiento de contraseña.
+        Si no proceden de un correo electrónico de restablecimiento de contraseña, asegúrese de que utiliza la
+        Dirección URL completa proporcionada.
+      send_instructions: Usted recibirá un correo electrónico con instrucciones sobre cómo restablecer
+        Tu contraseña en unos pocos minutos.
+      send_paranoid_instructions: Si su dirección de correo electrónico existe en nuestra base de datos,
+        Recibirá un enlace de recuperación de la contraseña a su dirección de correo electrónico en unos minutos.
+      updated: La contraseña se ha cambiado correctamente. Ahora estás registrado.
+      updated_not_active: la contraseña se ha cambiado correctamente.
+      edit:
+        change_your_password: Cambiar su contraseña
+      new:
+        forgot_your_password: ¿Has olvidado tu contraseña?
+    registrations:
+      destroyed: Adiós! Su cuenta ha sido cancelada. Esperamos verte
+        Pronto de nuevo.
+      signed_up: Welcome! Te has suscrito correctamente.
+      signed_up_but_inactive: Se ha suscrito correctamente. Sin embargo, no podríamos
+        Iniciar sesión en su cuenta, porque aún no está activada.
+      signed_up_but_locked: Usted ha firmado correctamente. Sin embargo, no podríamos
+        Iniciar sesión en su cuenta porque está bloqueado.
+      signed_up_but_unconfirmed: un mensaje con un vínculo de confirmación ha sido enviado
+        A su dirección de correo electrónico. Por favor abra el enlace para activar su cuenta.
+      update_needs_confirmation: Si actualiza su cuenta correctamente, pero necesitamos
+        verificar tu dirección de correo electrónico nueva. Compruebe su correo electrónico y haga clic en el
+        enlace de confirmación para finalizar confirmando tu nueva dirección de correo electrónico.
+      updated: Actualizó su cuenta correctamente.
+      edit:
+        edit_resource_name: Editar %{resource_name}
+        currently_waiting_confirmation_for: 'Actualmente a la espera de confirmación: %{resource}'
+        leave_blank_if: "(deje en blanco si no desea cambiarlo)"
+        we_need_your: "(necesitamos su contraseña actual para confirmar sus cambios)"
+        cancel_my_account: cancelar mi cuenta
+        back: atrás
+      new:
+        sign_up: Regístrese
+    sessions:
+      signed_in: ''
+      signed_out: Cerró sesión correctamente.
+      new:
+        sign_in: Iniciar sesión
+        remember_me: Recordarme
+    unlocks:
+      send_instructions: Usted recibirá un correo electrónico con instrucciones sobre cómo
+        desbloquear su cuenta en pocos minutos.
+      send_paranoid_instructions: Si su cuenta existe, recibirá un correo electrónico
+        con instrucciones sobre cómo desbloquear en pocos minutos.
+      unlocked: Tu cuenta se ha desbloqueado. Por favor, iniciar sesión para continuar.
+      new:
+        resend_unlock_instructions: Reenviar instrucciones de desbloqueo
+    shared:
+      links:
+        sign_in: Iniciar sesión
+        sign_up: Regístrese
+        forgot_your_password: ¿Has olvidado tu contraseña?
+        didn_t_receive_confirmation: No recibio instrucciones de confirmación?
+        didn_t_receive_unlock: No recibio instrucciones de desbloqueo?
+        sign_in_with_provider: 'Inicia sesión con # provider.to_s.titleize '
+  errors:
+    messages:
+      already_confirmed: Ya estaba confirmado, intente iniciar sesión
+      confirmation_period_expired: necesita ser confirmada dentro de  %{period}, por favor
+        Solicitar una nueva
+      expired: ha caducado, solicite una nueva
+      not_found: no se ha encontrado
+      not_locked: No estaba bloqueada
+      not_saved:
+        one: '1 error prohibido este %{resource} siendo guardado:'
+        other: "%{count} errores prohibido este %{resource} de ser guardado:"

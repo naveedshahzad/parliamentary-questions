@@ -1,21 +1,21 @@
 en:
   devise:
     invitations:
-      send_instructions: 'una invitación de correo electrónico se ha enviado a %{email}.'
-      invitation_token_invalid: 'El token de invitación proporcionado no es válido!'
-      updated: 'Tu contraseña se ha establecido correctamente. Ahora estás suscrito.'
-      no_invitations_remaining: "No hay invitaciones restante"
-      invitation_removed: 'Tu invitación fue eliminado.'
+      send_instructions: 'An invitation email has been sent to %{email}.'
+      invitation_token_invalid: 'The invitation token provided is not valid!'
+      updated: 'Your password was set successfully. You are now signed in.'
+      no_invitations_remaining: "No invitations remaining"
+      invitation_removed: 'Your invitation was removed.'
       new:
-        header: "Enviar invitación"
-        submit_button: "Enviar una invitación"
+        header: "Send invitation"
+        submit_button: "Send an invitation"
       edit:
-        header: "Establecer la contraseña"
-        submit_button: "Establecer mi contraseña"
+        header: "Set your password"
+        submit_button: "Set my password"
     mailer:
       invitation_instructions:
-        subject: 'instrucciones de invitación'
-        someone_invited_you: 'Ustede ha sido invitado a usar el Rastreador PQ.'
-        accept: 'aceptar la invitación'
-        setup: "Usted tendrá que crear su propia contraseña como parte de la configuración de la cuenta."
-        ignore: "Si usted no desea aceptar la invitación "
+        subject: 'Invitation instructions'
+        someone_invited_you: 'You have been invited to use the PQ Tracker.'
+        accept: 'accept the invitation'
+        setup: "You will need to create your own password as part of your account setup."
+        ignore: "If you don't want to accept the invitation "
