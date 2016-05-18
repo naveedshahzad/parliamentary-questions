@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
 
   before_action :set_locale
   def set_locale
-      I18n.locale = params[:locale] || I18n.default_locale
+      I18n.locale = params[:locale] || :es # I18n.default_locale
   end
   # SSL Production Config
   if Rails.env.production? && !HostEnv.is_dev?

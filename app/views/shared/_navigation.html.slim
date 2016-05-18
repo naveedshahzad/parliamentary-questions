@@ -30,7 +30,7 @@
             li= link_to t('.sign_out'), destroy_user_session_path
           = form_tag(search_path, { :method => 'get', :id => 'search_form', :class => 'navbar-form navbar-right', :role => 'search'}) do
             .form-group
-              = text_field_tag :search, params[:search], { :id => 'search_field',  :class => 'form-control', :placeholder => 'Search by UIN' }
+              = text_field_tag :search, params[:search], { :id => 'search_field',  :class => 'form-control', :placeholder => t('.search_by_uin') }
             = button_tag(:type => 'submit', :id => 'search_button', :class => 'btn btn-default') do
               span.fa.fa-search
         - elsif current_user.finance_user?

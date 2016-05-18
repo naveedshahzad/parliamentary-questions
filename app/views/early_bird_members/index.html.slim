@@ -3,7 +3,7 @@ h1= t('.early_bird_members')
 #admin-wm-list
   div class="row"
     ul#admin-button-bar
-      li= link_to (t('.send_early_bird_info')), {controller: 'early_bird_send_emails', action: 'send_emails'}, {class: 'buttont('.onclick_ga')send', 'event', 'settings', 'earlybird', 'send early bird info');" }
+      li= link_to (t('.send_early_bird_info')), {controller: 'early_bird_send_emails', action: 'send_emails'}, {class: 'button', onclick: "ga_send('event', 'settings', 'earlybird', 'send early bird info');" }
       li= link_to (t('.add_early_bird_member')), new_early_bird_member_path, {class: 'button-secondary'}
       li= link_to (t('.early_bird_preview')), {controller: 'early_bird_dashboard', action: 'preview'}, {class: 'button-secondary'}
   table.table

@@ -1,12 +1,12 @@
 = form_tag({controller: 'export', action: 'csv_quick'},{:id => 'csvExport', multipart: true}) do
-  input#qa-export-csv type="button" value="Export PQs to CSV"
+  input#qa-export-csv type="button" value=t('.export_pqs_to_csv')
   .content.collapsed
     .selectionCount.notice
-      'No PQs selected
+      = t('.no_pqs_selected')
     = hidden_field_tag :date_from, '04/06/2014'
     = hidden_field_tag :date_to, Date.today.to_s(:date)
     = hidden_field_tag :pqs_comma_separated
 
     .buton-area
-      input#do-export class="button" disabled="disabled" type="submit" value="Export"
-      input.qa-cancel class="button button-cancel button-secondary" type="reset" value="Cancel"
+      input#do-export class="button" disabled="disabled" type="submit" value=t('.export')
+      input.qa-cancel class="button button-cancel button-secondary" type="reset" value=t('.cancel')

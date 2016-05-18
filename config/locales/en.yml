@@ -142,10 +142,29 @@ en:
       trim_link: Trim link
     questions_list:
       parliamentary_questions: parliamentary questions
-    quick_action_draft_reminders: {}
+      select_all: Select all
+    quick_action_draft_reminders:
+      send_draft_reminders: Send Draft Reminders
+      no_pqs_selected: No PQs selected
+      send: Send
+      cancel: Cancel
     quick_action_edit_dates:
       e_g_20_06: e.g. 20/06/2014
-    quick_action_export: {}
+      edit_pq_dates: Edit PQ dates
+      no_pqs_selected: No PQs selected
+      edit: Edit
+      cancel: Cancel
+      internal_deadline: Internal deadline
+      select_a_date: select a date
+      draft_received: Draft received
+      minister_cleared: Minister cleared
+      pod_cleared: POD cleared
+      answered: Answered
+    quick_action_export:
+      export_pqs_to_csv: Export PQs to CSV
+      no_pqs_selected: No PQs selected
+      export: Export
+      cancel: Cancel
     search:
       search: Search
   deputy_directors:
@@ -580,6 +599,7 @@ en:
       press_desk_report: Press desk report
       settings: Settings
       sign_out: Sign out
+      search_by_uin: Search by UIN
     question_assigned:
       allocation: 'Allocation:'
       accepted: Accepted

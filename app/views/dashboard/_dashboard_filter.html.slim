@@ -12,7 +12,7 @@
 
       #date-for-answer.filter-box
         h3= t('.date_for_answer')
-        input#answer-date-today.right type="button" value="Today"
+        input#answer-date-today.right type="button" value="Hoy"
         .content
           h4= t('.from')
           .datepicker.form-group
@@ -23,11 +23,11 @@
             input#answer-to.form-control type="text" placeholder="e.g. 20/06/2014"
             span.fa.fa-calendar title="select a date"
           .clearFilter
-            input#clear-answer-filter.right type="button" value="Clear"
+            input#clear-answer-filter.right type="button" value="Claro"
 
       #internal-deadline.filter-box
         h3= t('.internal_deadline')
-        input#deadline-date-today.right type="button" value="Today"
+        input#deadline-date-today.right type="button" value="Hoy"
         .content
           h4= t('.from')
           .datepicker.form-group
@@ -40,10 +40,10 @@
             span.fa.fa-calendar title="select a date"
 
           .clearFilter
-            input#clear-deadline-filter.right type="button" value="Clear"
+            input#clear-deadline-filter.right type="button" value="Claro"
 
     #flag.filter-box
-      input.view.open type="button" value="Status"
+      input.view.open type="button" value="Estado"
       .notice
         span= t('.1_selected')
       .content.collapsed
@@ -52,61 +52,62 @@
             - @statuses.each do |question_status|
               - if question_status == 'unassigned'
                 label for="unassigned"
-                  input id="unassigned" type="radio" name="flag" value="Unassigned"
-                  'Unassigned
+                  input id="unassigned" type="radio" name="flag" value="Sin asignar"
+                  =Progress.UNASSIGNED
               - if question_status == 'no_response'
                 label for="no_response"
-                  input id="no_response" type="radio" name="flag" value="No response"
-                  'No response
+                  input id="no_response" type="radio" name="flag" value="No hay respuesta"
+                  =Progress.NO_RESPONSE
               - if question_status == 'rejected'
                 label for="rejected"
-                  input id="rejected" type="radio" name="flag" value="Rejected"
-                  'Rejected
+                  input id="rejected" type="radio" name="flag" value=Progress.REJECTED
+                  =Progress.REJECTED
               - if question_status == 'draft_pending'
                 label for="draft_pending"
-                  input id="draft_pending" type="radio" name="flag" value="Draft Pending"
-                  'Draft Pending
+                  input id="draft_pending" type="radio" name="flag" value="Proyecto pendiente"
+                  =Progress.DRAFT_PENDING
               - if question_status == 'with_pod'
                 label for="with_pod"
-                  input id="with_pod" type="radio" name="flag" value="With POD"
-                  'With POD
+                  input id="with_pod" type="radio" name="flag" value="Con vaina"
+                  =Progress.WITH_POD
               - if question_status == 'pod_query'
                 label for="pod_query"
-                  input id="pod_query" type="radio" name="flag" value="POD Query"
-                  'POD Query
+                  input id="pod_query" type="radio" name="flag" value="Consulta POD"
+                  =Progress.POD_QUERY
               - if question_status == 'pod_cleared'
                 label for="pod_cleared"
-                  input id="pod_cleared" type="radio" name="flag" value="POD Cleared"
-                  'POD Cleared
+                  input id="pod_cleared" type="radio" name="flag" value="POD despejado"
+                  =Progress.POD_CLEARED
               - if question_status == 'with_minister'
                 label for="with_minister"
-                  input id="with_minister" type="radio" name="flag" value="With Minister"
-                  'With Minister
+                  input id="with_minister" type="radio" name="flag" value="Con el Ministro"
+                  =Progress.WITH_MINISTER
               - if question_status == 'ministerial_query'
                 label for="minister_query"
-                  input id="minister_query" type="radio" name="flag" value="Ministerial Query"
-                  'Ministerial Query
+                  input id="minister_query" type="radio" name="flag" value="Consulta Ministerial"
+                  
+                  =Progress.MINISTERIAL_QUERY
               - if question_status == 'minister_cleared'
                 label for="minister_cleared"
-                  input id="minister_cleared" type="radio" name="flag" value="Minister Cleared"
-                  'Minister Cleared
+                  input id="minister_cleared" type="radio" name="flag" value="Ministra borrado"
+                  =Progress.MINISTER_CLEARED
               - if question_status == 'answered'
                 label for="answered"
-                  input id="answered" type="radio" name="flag" value="Answered"
-                  'Answered
+                  input id="answered" type="radio" name="flag" value="Respondió:"
+                  =Progress.ANSWERED
               - if question_status == 'transferred_out'
                 label for="transferred_out"
-                  input id="transferred_out" type="radio" name="flag" value="Transferred out"
-                  'Transferred out
+                  input id="transferred_out" type="radio" name="flag" value="Transferido a"
+                  =Progress.TRANSFERRED_OUT
           - else
             'N/A
         .clearFilter
-          input.clear.right type="button" value="Clear"
+          input.clear.right type="button" value="Claro"
 
     - if @dashboard_state == "In progress" || @dashboard_state == "Backlog"
 
       #replying-minister.filter-box
-        input.view.open type="button" value="Replying minister"
+        input.view.open type="button" value="Respuesta del Ministro"
         .notice
           span= t('.1_selected')
         .content.collapsed
@@ -119,10 +120,10 @@
             - else
               'N/A
           .clearFilter
-            input.clear.right type="button" value="Clear"
+            input.clear.right type="button" value="Claro"
 
       #policy-minister.filter-box
-        input.view.open type="button" value="Policy minister"
+        input.view.open type="button" value="Ministro de la política"
         .notice
           span= t('.1_selected')
         .content.collapsed
@@ -138,10 +139,10 @@
             - else
               'N/A
           .clearFilter
-            input#clear.right type="button" value="Clear"
+            input#clear.right type="button" value="Claro"
 
       #question-type.filter-box
-        input.view.open type="button" value="Question type"
+        input.view.open type="button" value="Tipo de pregunta"
         .notice
           span= t('.1_selected')
         .content.collapsed
@@ -150,28 +151,28 @@
               - @question_types.each do |question_type|
                 - if question_type == 'NamedDay'
                   label
-                    input type="radio" name="question-type" value="Named Day"
-                    'Named Day
+                    input type="radio" name="question-type" value="Día nombre"
+                    'Día nombre
                 - else
                   label
                     input type="radio" name="question-type" value= question_type
                     = question_type
             - if @transfers.count > 1
               label
-                input type="radio" name="question-type" value="Transferred"
-                'Transferred
+                input type="radio" name="question-type" value="Transferido"
+                'Transferido
             - if @i_will_writes.count > 1
               label
-                input type="radio" name="question-type" value="I will write"
-                'I will write
+                input type="radio" name="question-type" value="Voy a escribir"
+                'Voy a escribir
             - else
               'N/A
           .clearFilter
-            input#clear.right type="button" value="Clear"
+            input#clear.right type="button" value="Claro"
 
       .filter-box
         h3= t('.keywords')
         .content
           input#keywords.form-control type="text" placeholder="e.g. keywords, names"
           .clearFilter
-            input#clear-keywords-filter.right type="button" value="Clear"
+            input#clear-keywords-filter.right type="button" value="Claro"

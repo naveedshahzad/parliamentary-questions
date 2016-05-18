@@ -50,5 +50,7 @@
     (window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
     ga('create', '#{Settings.ga_tracker_id}', 'auto');
     ga('send', 'pageview');
-
+    var footer_html = '<p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>';
+    footer_html += '<p>Todo el contenido está disponible bajo la <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, excepto que indique lo contrario</p>';
+    jQuery(".open-government-licence").html(footer_html);
 = render template: "layouts/moj_template"

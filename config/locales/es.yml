@@ -142,10 +142,29 @@ es:
       trim_link: Trim link
     questions_list:
       parliamentary_questions: Preguntas parlamentarias
-    quick_action_draft_reminders: {}
+      select_all: Seleccionar todo
+    quick_action_draft_reminders:
+      send_draft_reminders: Envío del proyecto de Recordatorios
+      no_pqs_selected: No PQs seleccionados
+      send: Enviar
+      cancel: Cancelar
     quick_action_edit_dates:
       e_g_20_06: por ejemplo, el 20/06/2014
-    quick_action_export: {}
+      edit_pq_dates: Editar fechas de PQ
+      no_pqs_selected: No PQs seleccionados
+      edit: editar
+      cancel: Cancelar
+      internal_deadline: Fecha límite interna
+      select_a_date: Seleccione una fecha
+      draft_received: Proyecto recibido
+      minister_cleared: Ministra borrado
+      pod_cleared: POD despejado
+      answered: 'Respondió:'
+    quick_action_export:
+      export_pqs_to_csv: PQs de exportación a CSV
+      no_pqs_selected: No PQs seleccionados
+      export: De la exportación
+      cancel: Cancelar
     search:
       search: Buscar
   deputy_directors:
@@ -580,6 +599,7 @@ es:
       press_desk_report: Informe Oficina de Prensa
       settings: Ajustes
       sign_out: Salir
+      search_by_uin: Búsqueda por UID
     question_assigned:
       allocation: 'Asignación:'
       accepted: aceptado

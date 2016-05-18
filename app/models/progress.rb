@@ -70,55 +70,68 @@ class Progress < ActiveRecord::Base
   end
 
   def self.UNASSIGNED
+    #Unassigned
     'Unassigned'
   end
 
   def self.NO_RESPONSE
-    'No response'
+    #'No response'
+    'No hay respuesta'
   end
 
   def self.DRAFT_PENDING
-    'Draft Pending'
+    #'Draft Pending'
+    'Proyecto pendiente'
   end
 
   def self.REJECTED
-    'Rejected'
+    #'Rejected'
+    'Rechazado'
   end
 
   def self.WITH_POD
-    'With POD'
+    #'With POD'
+    'Con vaina'
   end
 
   def self.POD_QUERY
-    'POD Query'
+    #'POD Query'
+    'Consulta POD'
   end
 
   def self.POD_CLEARED
-    'POD Cleared'
+    #'POD Cleared'
+    'OD despejado'
   end
 
   def self.WITH_MINISTER
-    'With Minister'
+    #With Minister
+    'Con el Ministro'
   end
 
   def self.MINISTERIAL_QUERY
-    'Ministerial Query'
+    #'Ministerial Query'
+    'Consulta Ministerial'
   end
 
   def self.MINISTER_CLEARED
-    'Minister Cleared'
+    #'Minister Cleared'
+    'Ministra borrado'
   end
 
   def self.ANSWERED
-    'Answered'
+    #'Answered'
+    'Respondió:'
   end
 
   def self.TRANSFERRED_OUT
-    'Transferred out'
+    #'Transferred out'
+    'Transferido a'
   end
 
   def self.TRANSFER
-    'Transfer'
+    #'Transfer'
+    'Transferencia'
   end
 
   def self.new_questions

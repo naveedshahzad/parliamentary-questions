@@ -174,7 +174,8 @@ var document, $, trimLink, ga;
         }
       });
       var countMessage = ( filteredQuestionCount == 1 ) ? "question" : "questions";
-      $('#count').html("<strong>" + filteredQuestionCount + "</strong> <span>parliamentary " + countMessage + " out of <strong>" + totalQuestionCount + "</strong>.</span>");
+      //$('#count').html("<strong>" + filteredQuestionCount + "</strong> <span>parliamentary " + countMessage + " out of <strong>" + totalQuestionCount + "</strong>.</span>");
+      $('#count').html("preguntas parlamentarias  <strong>" + filteredQuestionCount + "</strong> de <strong>" + totalQuestionCount + "</strong>.</span>");
     };
 
     var showAllInProgress = function() {

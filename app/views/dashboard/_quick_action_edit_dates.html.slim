@@ -1,42 +1,44 @@
 = form_tag({controller: 'quick_action', action: 'dates'},{:id => 'editDates', multipart: true}) do
-  input#qa-edit-dates type="button" value="Edit PQ dates"
+  input#qa-edit-dates type="button" value=t('.edit_pq_dates')
   .content.collapsed
     .selectionCount.notice
-      'No PQs selected
+      = t('.no_pqs_selected')
 
     = hidden_field_tag :pqs_comma_separated_for_dates
 
     .filter-box
       label.form-label for="qa-edit-deadline-date"
-        'Internal deadline
+        = t(".internal_deadline")
       .datetimepicker.form-group
         =text_field_tag 'qa_edit_deadline_date', nil, class: "form-control", type: "text", placeholder: t('.e_g_20_06')
-        span.fa.fa-calendar title="select a date"
+        span.fa.fa-calendar title=t(".select_a_date")
 
       label.form-label for="qa_edit_draft_date"
-        'Draft received
+        =t(".draft_received")
+
       .datetimepicker.form-group
         =text_field_tag 'qa_edit_draft_date', nil, class: "form-control", type: "text", placeholder: t('.e_g_20_06')
-        span.fa.fa-calendar title="select a date"
+        span.fa.fa-calendar title=t(".select_a_date")
+
 
       label.form-label for="qa_edit_pod_date"
-        'POD cleared
+         =t(".pod_cleared")
       .datetimepicker.form-group
         =text_field_tag 'qa_edit_pod_date', nil, class: "form-control", type: "text", placeholder: t('.e_g_20_06')
-        span.fa.fa-calendar title="select a date"
+        span.fa.fa-calendar title=t(".select_a_date")
 
       label.form-label for="qa_edit_minister_date"
-        'Minister cleared
+        =t(".minister_cleared")
       .datetimepicker.form-group
         =text_field_tag 'qa_edit_minister_date', nil, class: "form-control", type: "text", placeholder: t('.e_g_20_06')
-        span.fa.fa-calendar title="select a date"
+        span.fa.fa-calendar title=t(".select_a_date")
 
       label.form-label for="qa_edit_answered_date"
-        'Answered
+        =t(".answered")
       .datetimepicker.form-group
         =text_field_tag 'qa_edit_answered_date', nil, class: "form-control", type: "text", placeholder: t('.e_g_20_06')
-        span.fa.fa-calendar title="select a date"
+        span.fa.fa-calendar title=t(".select_a_date")
 
     .button-area
-      input#do-edit class="button" disabled="disabled" type="submit" value="Edit"
-      input.qa-cancel class="button button-cancel button-secondary" type="reset" value="Cancel"
+      input#do-edit class="button" disabled="disabled" type="submit" value=t(".edit")
+      input.qa-cancel class="button button-cancel button-secondary" type="reset" value=t(".cancel")
