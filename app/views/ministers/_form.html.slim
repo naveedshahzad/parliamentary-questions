@@ -3,20 +3,20 @@
     = render partial: 'shared/errors', object: @minister
     fieldset
       .form-group
-        label.form-label for="minister_name"  Name
+        label.form-label for="minister_name"  Nombre
         = f.text_field :name, {class: 'form-control'}
       .form-group
-        label.form-label for="minister_title"  Title
+        label.form-label for="minister_title"  Título
         = f.text_field :title, {class: 'form-control'}
       = f.fields_for :minister_contacts do |ff|
         .form-group
-          label.form-label for="minister_minister_contacts_attributes_0_name"  Contact description
+          label.form-label for="minister_minister_contacts_attributes_0_name"  Descripción de contacto
           = ff.text_field :name, {class: 'form-control'}
         .form-group
           label.form-label for="minister_minister_contacts_attributes_0_email"  Email
           = ff.email_field :email, {class: 'form-control'}
         .form-group
-          label.form-label for="minister_minister_contacts_attributes_0_phone"  Phone
+          label.form-label for="minister_minister_contacts_attributes_0_phone"  Telefono
           = ff.text_field :phone, {class: 'form-control'}
         .form-group
           p.text= t('.contact_status')
@@ -24,9 +24,9 @@
             = ff.check_box :deleted
             = t('.inactive')
       .form-group
-        p.text style=""  Minister status
+        p.text style="" Estado del ministro
         label.block-label for="minister_deleted"
           = f.check_box :deleted
-          = ' Inactive'
+          = ' Inactivo'
       .form-group
-        = f.submit 'Save', :id => 'save', :class => 'button'
+        = f.submit 'Guardar', :id => 'save', :class => 'button'

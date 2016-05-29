@@ -3,18 +3,18 @@
     = render partial: 'shared/errors', object: @press_officer
     fieldset
       .form-group
-        label.form-label for="press_officer_name"  Name
+        label.form-label for="press_officer_name"  Nombre
         = f.text_field :name, {class: 'form-control'}
       .form-group
         label.form-label for="press_officer_email"  Email
         = f.email_field :email, {class: 'form-control'}
       .form-group
-        label.form-label for="press_officer_press_desk_id"  Press Desk
-        = f.collection_select(:press_desk_id, @press_offices, :id, :name, :include_blank => "Please select")
+        label.form-label for="press_officer_press_desk_id" pantalones Escritorio
+        = f.collection_select(:press_desk_id, @press_offices, :id, :name, :include_blank => "Por favor seleccione")
       .form-group
         p.text= t('.status')
         label.block-label for="press_officer_deleted"
           = f.check_box :deleted
           = t('.inactive')
       .form-group
-        = f.submit 'Save', :id => 'save', :class => 'button'
+        = f.submit 'Guardar', :id => 'save', :class => 'button'

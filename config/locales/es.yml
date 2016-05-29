@@ -161,9 +161,9 @@ es:
       pod_cleared: POD despejado
       answered: 'Respondió:'
     quick_action_export:
-      export_pqs_to_csv: PQs de exportación a CSV
-      no_pqs_selected: No PQs seleccionados
-      export: De la exportación
+      export_pqs_to_csv: Exportar a CSV
+      no_pqs_selected: No Pregunta seleccionados
+      export: Exportar ahora
       cancel: Cancelar
     search:
       search: Buscar
@@ -452,9 +452,9 @@ es:
     answer:
       answer_submitted_on_time: Respuesta presentada a tiempo
       answer_not_submitted_on: Respuesta no se presentó a tiempo
-      library_deposit: "'Depósito Biblioteca'"
-      holding_reply_flag: "'Sostiene el indicador respuesta'"
-      create_i_will_write: Crear seguimiento 'escribiré'
+      library_deposit: "Depósito Biblioteca"
+      holding_reply_flag: "Sostiene el indicador respuesta"
+      create_i_will_write: "Crear seguimiento 'escribiré'"
       create_an: 'Crear una '
     com_data:
       internal_deadline_render: Plazo Interno%{render}}
@@ -470,14 +470,15 @@ es:
       press_desk: Oficina de Prensa
       send_an_accept_reject: Enviar un correo electrónico de recordatorio de aceptar/rechazar
       not_allocated: No asignada
+      internal_deadline: fecha límite interna
     fc_data:
-      finance_interest: "'Interes financiero' }"
+      finance_interest: "Interes financiero"
     minister_check:
       answering_minister_query: "'Respondiendo a la consulta ministro' }"
       policy_minister_query: "'consulta ministro de Política'"
     pod_check:
       date_sent_to: Fecha enviada a
-      pod_query_flag: "'POD query flag'"
+      pod_query_flag: "Bandera de consulta POD"
       date_cleared_by: Fecha despejada por
     pq_data:
       house: Asamblea
@@ -490,8 +491,8 @@ es:
       round_robin: "'Round robin'"
     pq_draft:
       date_pq_accepted_by: Fecha de la pregunta aceptada por el oficial de acción
-      i_will_write: "'Escribiré' }"
-      pq_correction_received: "'Correción de pregunta recibida'"
+      i_will_write: "Escribiré"
+      pq_correction_received: "Correción de pregunta recibida"
     pq_header:
       named_day: Nombradas hoy
       transferred_in: Transferida en
@@ -647,9 +648,9 @@ es:
       average_time_in_phase: Tiempo promedio en la fase
   transferred:
     form:
-      for_the_transferred_pq: para la transferencia de la Pregunta
-      house: House
-      house_of_commons: Cámara de los Comunes
+      for_the_transferred_pq: Por favor, coloque el ID de la Pregunta
+      house: Tipo
+      house_of_commons: Parlamento / Senado / Asamblea / Concejo
       house_of_lords: Cámara de los Lores
       member_has_registered_an: Miembro ha registrado un interés en la pregunta
       'no': 'No'
@@ -725,3 +726,4 @@ es:
       status: estado
       edit: Editar
       return_to_watchlist_member: Volver a la lista de miembros de lista de observación
+  unassigned: No Asignada

@@ -5,7 +5,7 @@ h3= t('.house')
 p.text= @pq.house_name
 
 .form-group
-  label.form-label for="date_for_answer"  Date for answer back to Parliament
+  label.form-label for="date_for_answer"  Fecha para responder al Senado
   .datepicker
     input#date_for_answer.form-control name="pq[date_for_answer]" type="text" value=(@pq.date_for_answer.try(:to_s, :date)) /
     span.fa.fa-calendar title="select a date"
@@ -34,13 +34,13 @@ hr/
                                             field: 'round_robin',
                                             label: t('.round_robin') }
 .form-group
-  label.form-label for="round_robin_guidance_received"  Date guidance received
+  label.form-label for="round_robin_guidance_received"  Dirección Fecha recibida
   .datetimepicker
     input#round_robin_guidance_received.form-control name="pq[round_robin_guidance_received]" type="text" value=(@pq.round_robin_guidance_received.to_s) /
     span.fa.fa-calendar title="select a date"
 
 .form-group
-  label.form-label for="round_robin_date"  Date round robin guidance sent to action officer
+  label.form-label for="round_robin_date"  Fecha de la ronda robin dirección enviada al oficial de acción
   .datetimepicker
     input#round_robin_date.form-control name="pq[round_robin_date]" type="text" value=(@pq.round_robin_date.to_s) /
     span.fa.fa-calendar title="select a date"

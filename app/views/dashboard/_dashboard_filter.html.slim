@@ -23,7 +23,7 @@
             input#answer-to.form-control type="text" placeholder="e.g. 20/06/2014"
             span.fa.fa-calendar title="select a date"
           .clearFilter
-            input#clear-answer-filter.right type="button" value="Claro"
+            input#clear-answer-filter.right type="button" value="Limpiar"
 
       #internal-deadline.filter-box
         h3= t('.internal_deadline')
@@ -40,7 +40,7 @@
             span.fa.fa-calendar title="select a date"
 
           .clearFilter
-            input#clear-deadline-filter.right type="button" value="Claro"
+            input#clear-deadline-filter.right type="button" value="Limpiar"
 
     #flag.filter-box
       input.view.open type="button" value="Estado"
@@ -102,7 +102,7 @@
           - else
             'N/A
         .clearFilter
-          input.clear.right type="button" value="Claro"
+          input.clear.right type="button" value="Limpiar"
 
     - if @dashboard_state == "In progress" || @dashboard_state == "Backlog"
 
@@ -120,7 +120,7 @@
             - else
               'N/A
           .clearFilter
-            input.clear.right type="button" value="Claro"
+            input.clear.right type="button" value="Limpiar"
 
       #policy-minister.filter-box
         input.view.open type="button" value="Ministro de la política"
@@ -139,7 +139,7 @@
             - else
               'N/A
           .clearFilter
-            input#clear.right type="button" value="Claro"
+            input#clear.right type="button" value="Limpiar"
 
       #question-type.filter-box
         input.view.open type="button" value="Tipo de pregunta"
@@ -168,11 +168,11 @@
             - else
               'N/A
           .clearFilter
-            input#clear.right type="button" value="Claro"
+            input#clear.right type="button" value="Limpiar"
 
       .filter-box
         h3= t('.keywords')
         .content
           input#keywords.form-control type="text" placeholder="e.g. keywords, names"
           .clearFilter
-            input#clear-keywords-filter.right type="button" value="Claro"
+            input#clear-keywords-filter.right type="button" value="Limpiar"

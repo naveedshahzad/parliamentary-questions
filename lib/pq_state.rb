@@ -75,7 +75,7 @@ module PQState
 
   def self.state_label(state)
     case state
-    when UNASSIGNED        then 'Unassigned'
+    when UNASSIGNED        then 'No Asignada'#'Unassigned'
     when REJECTED          then 'Rejected'
     when NO_RESPONSE       then 'No response'
     when DRAFT_PENDING     then 'Draft Pending'

@@ -4,13 +4,11 @@
     fieldset
       .form-group
         label.form-label for="pq_uin"
-          'Por favor, introduzca el
-          abbr title="Unique Identification Number" UIN
           => t('.for_the_transferred_pq')
 
         = f.text_field :uin, class:'form-control'
       .form-group
-        label.form-label for="pq_question"  Por favor introduzca el texto de la pregunta de PQ transferido
+        label.form-label for="pq_question"  Por favor coloque el texto de la Pregunta
         = f.text_area :question, cols: 40, rows: 5, class:'form-control'
       .form-group
         label.form-label for="pq_dateforanswer"  Fecha de respuesta
@@ -45,10 +43,10 @@
           = f.radio_button :question_type, 'NamedDay'
           = t('.named_day')
       .form-group
-        label.form-label for="pq_transfer_in_ogd_id"  Transferido en de
+        label.form-label for="pq_transfer_in_ogd_id" Transferido a:
         = f.collection_select(:transfer_in_ogd_id, @ogd_list, :id, :name, :include_blank => "Seleccione Departamento")
       .form-group
-        label.form-label for="transfer_in_date"  Fecha en
+        label.form-label for="transfer_in_date"  Creada el:
         .datetimepicker
           input#transfer_in_date.form-control name="pq[transfer_in_date]" type="text" value=(@pq.transfer_in_date.to_s) /
           span.fa.fa-calendar title=""

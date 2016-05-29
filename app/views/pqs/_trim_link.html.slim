@@ -9,10 +9,10 @@
       span.additional-action= f.submit 'Undo', class: 'link'
 .form-group.trim_area
   = f.fields_for :trim_link_attributes, @pq.trim_link do |trim|
-    = trim.label :file, (@pq.has_trim_link? ? 'Change trim link' : 'Add a trim link')
+    = trim.label :file, (@pq.has_trim_link? ? 'Enlace de ajuste de cambio' : 'Agregar un enlace de ajuste')
     = trim.file_field :file
-    input#choices.button-secondary.button-choose type="button" value="Choose Trim file"
+    input#choices.button-secondary.button-choose type="button" value="Seleccione Archivo de recorte"
     div#status
       span.fa.fa-file-o
       span#tr5-message
-      input#cancel.button-secondary.button-cancel type="button" value="Cancel"
+      input#cancel.button-secondary.button-cancel type="button" value="Cancelar"

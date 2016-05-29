@@ -1,62 +1,60 @@
 #answeringminister
   .form-group
-    label.form-label for="sent_to_answering_minister"  Date sent to answering minister
+    label.form-label for="sent_to_answering_minister"  Fecha de envío al Ministro contestador
     .datetimepicker
       input#sent_to_answering_minister.form-control name="pq[sent_to_answering_minister]" type="text" value=(@pq.sent_to_answering_minister.to_s) /
-      span.fa.fa-calendar title="select a date"
+      span.fa.fa-calendar title=""
   = render partial: 'gds_checkbox', locals: { value: @pq.answering_minister_query,
                                               field: 'answering_minister_query',
                                               label: t('.answering_minister_query') }
   .form-group
-    label.form-label for="answering_minister_to_action_officer"  Date sent back to action officer
-    .datetimepicker
-      input#answering_minister_to_action_officer.form-control name="pq[answering_minister_to_action_officer]" type="text" value=(@pq.answering_minister_to_action_officer.to_s) /
-      span.fa.fa-calendar title="select a date"
+    label.form-label for="answering_minister_to_action_officer"  Fecha de envío a oficial de acción
+      span.fa.fa-calendar title=""
   .form-group
-    label.form-label for="answering_minister_returned_by_action_officer"  Date returned by action officer
+    label.form-label for="answering_minister_returned_by_action_officer"  comimos devuelta por el oficial de acción
     .datetimepicker
       input#answering_minister_returned_by_action_officer.form-control name="pq[answering_minister_returned_by_action_officer]" type="text" value=(@pq.answering_minister_returned_by_action_officer.to_s) /
-      span.fa.fa-calendar title="select a date"
+      span.fa.fa-calendar title=""
   .form-group
-    label.form-label for="resubmitted_to_answering_minister"  Resubmitted to minister
+    label.form-label for="resubmitted_to_answering_minister"  A enviar al Ministro
     .datetimepicker
       input#resubmitted_to_answering_minister.form-control name="pq[resubmitted_to_answering_minister]" type="text" value=(@pq.resubmitted_to_answering_minister.to_s) /
-      span.fa.fa-calendar title="select a date"
+      span.fa.fa-calendar title=""
   .form-group
-    label.form-label for="cleared_by_answering_minister"  Date cleared by answering minister
+    label.form-label for="cleared_by_answering_minister"  Fecha de Ministro respondiendo
     .datetimepicker
       input#cleared_by_answering_minister.form-control name="pq[cleared_by_answering_minister]" type="text" value=(@pq.cleared_by_answering_minister.to_s) /
-      span.fa.fa-calendar title="select a date"
+      span.fa.fa-calendar title=""
 - if @pq.policy_minister_id
   hr/
   #policyminister
     .form-group
-      label.form-label for="sent_to_policy_minister"  Sent to policy minister
+      label.form-label for="sent_to_policy_minister"  Envió al Ministro de política
       .datetimepicker
         input#sent_to_policy_minister.form-control name="pq[sent_to_policy_minister]" type="text" value=(@pq.sent_to_policy_minister.to_s) /
-        span.fa.fa-calendar title="select a date"
+        span.fa.fa-calendar title=""
 
     = render partial: 'gds_checkbox', locals: { value: @pq.policy_minister_query,
                                                 field: 'policy_minister_query',
                                                 label: t('.policy_minister_query')}
 
     .form-group
-      label.form-label for="policy_minister_to_action_officer"  Date sent back to action officer
+      label.form-label for="policy_minister_to_action_officer"  Fecha de envío a oficial de acción
       .datetimepicker
         input#policy_minister_to_action_officer.form-control name="pq[policy_minister_to_action_officer]" type="text" value=(@pq.policy_minister_to_action_officer.to_s) /
-        span.fa.fa-calendar title="select a date"
+        span.fa.fa-calendar title=""
     .form-group
-      label.form-label for="policy_minister_returned_by_action_officer"  Date returned by action officer
+      label.form-label for="policy_minister_returned_by_action_officer"  Fecha devuelto por el oficial de acción
       .datetimepicker
         input#policy_minister_returned_by_action_officer.form-control name="pq[policy_minister_returned_by_action_officer]" type="text" value=(@pq.policy_minister_returned_by_action_officer.to_s) /
-        span.fa.fa-calendar title="select a date"
+        span.fa.fa-calendar title=""
     .form-group
-      label.form-label for="resubmitted_to_policy_minister"  Date resubmitted to minister
+      label.form-label for="resubmitted_to_policy_minister"  Fecha de enviar al Ministro
       .datetimepicker
         input#resubmitted_to_policy_minister.form-control name="pq[resubmitted_to_policy_minister]" type="text" value=(@pq.resubmitted_to_policy_minister.to_s) /
-        span.fa.fa-calendar title="select a date"
+        span.fa.fa-calendar title=""
     .form-group
-      label.form-label for="cleared_by_policy_minister"  Date Cleared by policy minister
+      label.form-label for="cleared_by_policy_minister"  Fecha autorizado por Ministro de la política
       .datetimepicker
         input#cleared_by_policy_minister.form-control name="pq[cleared_by_policy_minister]" type="text" value=(@pq.cleared_by_policy_minister.to_s) /
-        span.fa.fa-calendar title="select a date"
+        span.fa.fa-calendar title=""

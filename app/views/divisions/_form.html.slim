@@ -3,15 +3,15 @@
     = render partial: 'shared/errors', object: @division
     fieldset
       .form-group
-        label.form-label for="division_name"  Name
+        label.form-label for="division_name" Nombre
         = f.text_field :name, {class: 'form-control'}
       .form-group
-        label.form-label for="division_directorate_id"  Directorate
-        = f.collection_select(:directorate_id, @directorates, :id, :name, :include_blank => "Please select")
+        label.form-label for="division_directorate_id" Dirección
+        = f.collection_select(:directorate_id, @directorates, :id, :name, :include_blank => "Por favor seleccione")
       .form-group
         p.text= t('.status')
         label.block-label for="division_deleted"
           = f.check_box :deleted
           = t('.inactive')
       .form-group
-        = f.submit 'Save', :id => 'save', :class => 'button'
+        = f.submit 'Guardar', :id => 'save', :class => 'button'

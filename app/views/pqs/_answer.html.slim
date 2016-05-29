@@ -1,5 +1,5 @@
 .form-group
-  label.form-label for="answer_submitted"  Date answer submitted
+  label.form-label for="answer_submitted"  Respuesta de fecha enviado
   .datetimepicker
     input#answer_submitted.form-control name="pq[answer_submitted]" type="text" value=(@pq.answer_submitted.to_s) /
     span.fa.fa-calendar title="select a date"
@@ -19,13 +19,13 @@
                                             label: t('.library_deposit')}
 
 .form-group
-  label.form-label for="pq_withdrawn"  Date PQ withdrawn
+  label.form-label for="pq_withdrawn"  Fecha PQ retirado
   .datetimepicker
     input#pq_withdrawn.form-control name="pq[pq_withdrawn]" type="text" value=(@pq.pq_withdrawn.to_s) /
     span.fa.fa-calendar title="select a date"
 
 = render partial: 'gds_checkbox', locals: { value: @pq.holding_reply_flag,
                                             field: 'holding_reply_flag',
-                                            label: t('.holding_reply_flag}')}
+                                            label: t('.holding_reply_flag')}
 - unless @pq.is_follow_up?
-  = link_to (t('.create_i_will_write')), {controller: 'i_will_write', action: 'create', id: @pq.uin}, {id: 'create_iww', class: 'button-secondary', title: t('.create_an_i_will_write_followup')}
+  = link_to (t('.create_i_will_write')), {controller: 'i_will_write', action: 'create', id: @pq.uin}, {id: 'create_iww', class: 'button-secondary'}

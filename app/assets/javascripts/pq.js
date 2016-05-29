@@ -89,7 +89,7 @@ var document, $, trimLink, ga;
       selectionCount++;
     });
     if (selectionCount > '0') {
-      var selectionMessage = ( selectionCount == 1 ) ? " PQ selected" : " PQs selected";
+      var selectionMessage = ( selectionCount == 1 ) ? " Pregunta seleccionada" : " Pregunta seleccionada";
       $('.selectionCount').html(selectionCount + selectionMessage);
       $('#do-export').removeAttr("disabled", "disabled");
       $('#do-reminders').removeAttr("disabled", "disabled");
@@ -99,13 +99,13 @@ var document, $, trimLink, ga;
         $('#qa_edit_pod_date').val().length == 10 ||
         $('#qa_edit_minister_date').val().length == 10 ||
         $('#qa_edit_answered_date').val().length == 10)
-        && $('#editDates .selectionCount').text().trim() != 'No PQs selected'
+        && $('#editDates .selectionCount').text().trim() != 'No Pregunta seleccionada'
       ){
         $('#do-edit').removeAttr("disabled", "disabled"); // Enable 'Edit' button.
       }
     }
     else {
-      $('.selectionCount').html("No PQs selected");
+      $('.selectionCount').html("No Pregunta seleccionada");
       $('#do-export').attr("disabled", "disabled");
       $('#do-edit').attr("disabled", "disabled");
       $('#do-reminders').attr("disabled", "disabled");
@@ -361,7 +361,8 @@ var document, $, trimLink, ga;
                                                  scrollMonth: false,
                                                  closeOnDateSelect: true,
                                                  dayOfWeekStart: 1,
-                                                 format: 'd/m/Y H:i'});
+                                                 format: 'd/m/Y H:i',
+                                                 lang: "es" });
 
       // set up any datetime pickers on the page
       $('.datepicker input').datetimepicker({timepicker: false,
@@ -370,7 +371,8 @@ var document, $, trimLink, ga;
                                              validateOnBlur: false,
                                              closeOnDateSelect: true,
                                              dayOfWeekStart: 1,
-                                             format: 'd/m/Y'});
+                                             format: 'd/m/Y',
+                                             lang: "es" });
       // enable select2 drop-boxes on various select controls
       $('.minister-select').select2({width: '250px'});
       $('.multi-select-action-officers').select2({width: '250px'});
@@ -518,7 +520,7 @@ var document, $, trimLink, ga;
         $(event.target).is('#qa_edit_pod_date') && $('#qa_edit_pod_date').val().length == 16 ||
         $(event.target).is('#qa_edit_minister_date') && $('#qa_edit_minister_date').val().length == 16 ||
         $(event.target).is('#qa_edit_answered_date') && $('#qa_edit_answered_date').val().length == 16)
-        && $('#editDates .selectionCount').text().trim() != 'No PQs selected'
+        && $('#editDates .selectionCount').text().trim() != 'No Pregunta seleccionada'
       ){
         $('#do-edit').removeAttr("disabled", "disabled"); // Enable 'Edit' button.
       }

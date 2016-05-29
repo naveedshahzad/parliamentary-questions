@@ -2,13 +2,13 @@
   = form_for @minister_contact do |f|
     = render partial: 'shared/errors', object: @minister_contact
     .form-group
-      label.form-label for="minister_contact_name"  Contact description
+      label.form-label for="minister_contact_name"  Descripción de contacto
       = f.text_field :name, {class: 'form-control'}
     .form-group
       label.form-label for="minister_contact_email"  Email
       = f.email_field :email, {class: 'form-control'}
     .form-group
-      label.form-label for="minister_contact_phone"  Phone
+      label.form-label for="minister_contact_phone"  Telefono
       = f.text_field :phone, {class: 'form-control'}
     .form-group
       label.block-label for="minister_contact_deleted"
@@ -16,4 +16,4 @@
         = t('.inactive')
     .form-group
       = f.hidden_field :minister_id
-      = f.submit 'Save', :id => 'save', :class => 'button'
+      = f.submit 'Guardar', :id => 'save', :class => 'button'

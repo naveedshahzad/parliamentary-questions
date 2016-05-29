@@ -3,7 +3,7 @@ h1= t('.watchlist_members')
 #admin-wm-list
   div class="row"
     ul#admin-button-bar
-      li= link_to (t('.send_allocation_info')), {controller: 'watchlist_send_emails', action: 'send_emails'}, {class: 'buttont('.onclick_ga')send', 'event', 'settings', 'watchlist', 'send allocation info');" }
+      li= link_to (t('.send_allocation_info')), {controller: 'watchlist_send_emails', action: 'send_emails'}, {class: 'button', :onclick=> "ga('send', 'event', 'settings', 'watchlist', 'send allocation info');" }
       li= link_to (t('.add_watchlist_member')), new_watchlist_member_path, {class: 'button-secondary'}
       li= link_to (t('.watchlist_preview')), {controller: 'watchlist_dashboard', action: 'preview'}, {class: 'button-secondary'}
   table.table
