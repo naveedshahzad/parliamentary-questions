@@ -8,12 +8,12 @@
   = form_tag controller: 'export', action: 'csv_for_pod' do
     fieldset
       .form-group
-        label.form-label for="date_from"  Date from
+        label.form-label for="date_from"  Desde
         .datepicker
           input#date_from.form-control name="date_from" type="text" value="04/06/2014" /
           span.fa.fa-calendar title="select a date"
       .form-group
-        label.form-label for="date_to"  Date to
+        label.form-label for="date_to"  Hasta
         .datepicker
           input#date_to.form-control name="date_to" type="text" value=Date.today.to_s(:date) /
           span.fa.fa-calendar title="select a date"

@@ -5,9 +5,9 @@ p= I18n.t("devise.mailer.invitation_instructions.someone_invited_you", url: root
 p= I18n.t("devise.mailer.invitation_instructions.setup").html_safe
 div style="padding-left:0.5em;margin-left:10px;border-left:4px solid gray;margin-top:5px;margin-right:5px;margin-bottom:5px;"
   p
-    | To complete your account setup you need to #{link_to I18n.t("devise.mailer.invitation_instructions.accept"), accept_invitation_url(@resource, :invitation_token => @token)}
+    | Para completar la activación de tu cuenta necesitas dar clic en #{link_to I18n.t("devise.mailer.invitation_instructions.accept"), accept_invitation_url(@resource, :invitation_token => @token)}
 p= t('.it_is_recommended_that')
 p
   = I18n.t("devise.mailer.invitation_instructions.ignore").html_safe
-  = mail_to Settings.mail_reply_to, 'contact the PQ team'
+  = mail_to Settings.mail_reply_to, 'Contacte al Equipo'
 = render 'shared/mailer/email_signature'

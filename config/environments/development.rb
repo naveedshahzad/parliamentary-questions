@@ -49,7 +49,7 @@ ParliamentaryQuestions::Application.configure do
     ActionMailer::Base.delivery_method = :smtp
     ActionMailer::Base.default :from => Settings.mail_from
     ActionMailer::Base.default :reply_to => Settings.mail_reply_to
-    ActionMailer::Base.default_url_options = { host: sending_host, protocol: 'http', port: '3000'}
+    ActionMailer::Base.default_url_options = { host: sending_host, protocol: 'http', port: '2015'}
     ActionMailer::Base.smtp_settings = {
         address: ENV['SMTP_HOSTNAME'] || 'localhost',
         port: ENV['SMTP_PORT'] || 587,

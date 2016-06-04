@@ -1,9 +1,9 @@
 live_url: https://trackparliamentaryquestions.service.gov.uk
-mail_from: PQ Team <no-reply@trackparliamentaryquestions.service.gov.uk>
-mail_reply_to: pqs@justice.gsi.gov.uk
+mail_from: Al Equipo <ingenierofelipeurrego@gmail.com>
+mail_reply_to: ingenierofelipeurrego@gmail.com
 mail_tech_support: pqsupport@digital.justice.gov.uk
 http_client_timeout: 20
-commission_mail_from: PQ Team <no-reply@trackparliamentaryquestions.service.gov.uk>
+commission_mail_from: Al Equipo <ingenierofelipeurrego@gmail.com
 healthcheck_pqa_api_interval: 15               # minimum interval between pqa API healthchecks in minutes
 key_metric_threshold: 0.5
 

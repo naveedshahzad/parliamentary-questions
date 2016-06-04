@@ -13,7 +13,7 @@ class QuickActionController < ApplicationController
     params.permit(:total_pqs, :pqs_comma_sep_for_drafts, :utf8, :authenticity_token)
     @quick_actions_service               = QuickActionsService.new
     @quick_actions_service.mail_draft_list(params[:pqs_comma_sep_for_drafts])
-    flash[:Success] = "Draft Reminder(s) Sent"
+    flash[:Success] = "Recordatorio enviado"
     redirect_to :back
   end
 end

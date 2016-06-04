@@ -1,6 +1,6 @@
 .deadline_input.form-group
   label.form-label for="pq_internal_deadline"
-    = "#{t('.internal_deadline')} #{render partial: 'shared/deadline_time', locals: {internal_deadline: @pq.internal_deadline, is_closed: @pq.closed?, draft_reply: @pq.draft_answer_received }}"
+    = "#{t('.internal_deadline')} #{render partial: 'shared/deadline_time', locals: {internal_deadline: @pq.internal_deadline, is_closed: @pq.closed?, draft_reply: @pq.draft_answer_received }}".html_safe
   .datetimepicker.default-time
     input#pq_internal_deadline.form-control name="pq[internal_deadline]" type="text" value=(@pq.internal_deadline.to_s) /
     span.fa.fa-calendar title="select a date"

@@ -40,7 +40,7 @@ es:
       edit_action_officer: Editar acción oficial
       return_to_action_officer: Volver a la lista oficial de acción
     index:
-      action_officers: iciales de acción
+      action_officers: Oficiales de acción
       add_action_officer: agregar acción oficial
       name: Nombre
       division: División
@@ -144,7 +144,7 @@ es:
       parliamentary_questions: Preguntas parlamentarias
       select_all: Seleccionar todo
     quick_action_draft_reminders:
-      send_draft_reminders: Envío del proyecto de Recordatorios
+      send_draft_reminders: Enviar recordatorios
       no_pqs_selected: No PQs seleccionados
       send: Enviar
       cancel: Cancelar
@@ -474,7 +474,7 @@ es:
     fc_data:
       finance_interest: "Interes financiero"
     minister_check:
-      answering_minister_query: "'Respondiendo a la consulta ministro' }"
+      answering_minister_query: "Respondiendo a la consulta ministro"
       policy_minister_query: "'consulta ministro de Política'"
     pod_check:
       date_sent_to: Fecha enviada a
@@ -618,9 +618,9 @@ es:
       email_signature:
         the_pq_team: El equipo de PQ
         parliamentary_branch: Rama parlamentaria
-        9_25_ministry_of: 9.25, Ministry of Justice, 102 Petty France, SW1H 9AJ
-        t_0203_334_6155: 'T: 0203 334 6155'
-        e: 'E:'
+        9_25_ministry_of: Calle 61 No 50-69
+        t_0203_334_6155: 'Cell: 57 3116408969'
+        e: 'Email:'
         the_content_is_best: El contenido se ve mejor en el navegador Firefox.
         for_any_technical_issues: Para cualquier problema técnico, por ejemplo, enlaces rotos,
       email_signature_plain:
