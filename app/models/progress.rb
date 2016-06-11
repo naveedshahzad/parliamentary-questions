@@ -76,7 +76,8 @@ class Progress < ActiveRecord::Base
 
   def self.NO_RESPONSE
     #'No response'
-    'No hay respuesta'
+    #'No hay respuesta'
+    'Sin Respuesta'
   end
 
   def self.DRAFT_PENDING
@@ -126,7 +127,8 @@ class Progress < ActiveRecord::Base
 
   def self.TRANSFERRED_OUT
     #'Transferred out'
-    'Transferido a'
+    #'Transferido a'
+    'Trasladado'
   end
 
   def self.TRANSFER

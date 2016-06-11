@@ -6,7 +6,7 @@ class TrimLinksController < ApplicationController
 
     data =
       unless Validators::Trim.valid_upload?(upload)
-        failure_data('Invalid file selected!')
+        failure_data('Archivo seleccionado no válido!')
       else
         io   = upload.read
         trim = TrimLink.create!(data: io,

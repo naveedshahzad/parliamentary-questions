@@ -60,7 +60,7 @@ trimLink.setUpDetailsPage = function() {
         $('.fa-file-o').toggleClass('fa-warning');
         $uploadMessage.text('This file is too large: ' + selectedFileName);
       } else {
-        $uploadMessage.text('File selected: ' + selectedFileName);
+        $uploadMessage.text('Archivo seleccionado: ' + selectedFileName);
       }
       $('#status').show();
     }
@@ -88,7 +88,7 @@ trimLink.setUpDashBoard = function() {
 
     var statusMessages = {
       selected : {
-        message : 'File selected',
+        message : 'Archivo seleccionado',
         classname : 'fa fa-file-o'
       },
       uploading : {

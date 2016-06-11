@@ -223,13 +223,14 @@ class Pq < ActiveRecord::Base
 
   def sole_accepted_action_officer
     if action_officers.all_accepted.size > 1
-      errors[:base] << "Unable to have two action officers accepted on the same question"
+      #errors[:base] << "Unable to have two action officers accepted on the same question"
+      errors[:base] << "No se puede tener dos agentes de acción aceptados sobre la misma cuestión"
     end
   end
 
   def transfer_out_consistency
     if ( !!transfer_out_date ^ !!transfer_out_ogd_id )
-      errors[:base] << 'Invalid transfer out submission - requires BOTH date and department'
+      errors[:base] << 'Traslado de salida no válido - presentación requiere tanto la fecha y departamento'
     end
   end
 

@@ -5,4 +5,4 @@
   /! rejected
 - else
   - reminder_accept_count =  ao_pq.reminder_accept > 0 ? " (#{ao_pq.reminder_accept})" : ''
-  = link_to raw("<span class=\"fa fa-envelope-o\"></span> Send reminder#{reminder_accept_count}"), {controller: 'action_officer_reminder', action: 'accept_reject', id: ao_pq.id, remote: true}, {class: 'ao-reminder-link', title: t('.send_an_accept_reject')}
+  = link_to raw("<span class=\"fa fa-envelope-o\"></span> Enviar recordatorio#{reminder_accept_count}"), {controller: 'action_officer_reminder', action: 'accept_reject', id: ao_pq.id, remote: true}, {class: 'ao-reminder-link', title: t('.send_an_accept_reject')}

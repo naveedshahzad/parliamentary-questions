@@ -3,7 +3,7 @@ h1
 #admin-user-form
   = form_for @user do |f|
     .form-group
-      = f.label(:name, "Name:")
+      = f.label(:name, "Nombre:")
       = f.text_field :name, {class: 'form-control'}
     .form-group
       = f.label(:name, "Email:")
@@ -18,5 +18,5 @@ h1
           = f.check_box :deleted
           = t('.inactive')
     .form-group
-      = f.submit 'Save', :id => 'save', :class => 'button'
+      = f.submit 'Guardar', :id => 'save', :class => 'button'
 = link_to t('.return_to_user_list'), users_path, {class: 'admin-link'}

@@ -14,7 +14,7 @@ es:
       actionlist_members: miembros Actionlist
       add_actionlist_member: Agregar miembro actionlist
       name: Nombre
-      status: estado
+      status: Estado
       edit: Editar
     new:
       add_actionlist_member: Agregar miembro actionlist
@@ -26,7 +26,7 @@ es:
       actionlist_member_details: detalles miembro Actionlist
       name: Nombre
       email: Correo
-      status: estado
+      status: Estado
       edit: Editar
       return_to_actionlist_member: Volver a la lista de miembros actionlist
     form:
@@ -34,7 +34,7 @@ es:
       inactive: INACTIVO
   action_officers:
     form:
-      status: estado
+      status: Estado
       inactive: INACTIVO
     edit:
       edit_action_officer: Editar acción oficial
@@ -45,7 +45,7 @@ es:
       name: Nombre
       division: División
       press_desk: Oficina de Prensa
-      status: estado
+      status: Estado
       edit: Editar
     new:
       add_action_officer: agregar acción oficial
@@ -59,7 +59,7 @@ es:
       deputy_director: Director Adjunto
       division: División
       press_desk: Oficina de Prensa
-      status: estado
+      status: Estado
       edit: Editar
       return_to_action_officer: Volver a la lista oficial de acción
   admin:
@@ -70,17 +70,17 @@ es:
       watch_list: lista de observación
       action_list: lista de acciones
       ministers: Los Ministros
-      deputy_directors: Directores Adjuntos
-      press_officers: los oficiales de prensa
+      deputy_directors: Secretarías Adjuntos
+      press_officers: Periodistas
       early_bird_list: Early bird list
       tasks: Tareas
       create_a_transferred_pq: Crear una transferencia PQ
       user_admin: Usuario administrativo
       users: los usuarios
-      directorates: Directorates
-      divisions: Divisiones
-      press_desks: escritorios de prensa
-      other_government_departments: otros Departamentos gubernamentales
+      directorates: Secretarías
+      divisions: Subsecretarías
+      press_desks: Oficinas de Prensa
+      other_government_departments: Entes descentralizados
   answering:
     answer_link:
       answer_the_pq: Contestar la PQ
@@ -169,17 +169,17 @@ es:
       search: Buscar
   deputy_directors:
     form:
-      status: estado
+      status: Estado
       inactive: INACTIVO
     edit:
       edit_deputy_director: Editar director adjunto
       return_to_deputy_director: Volver a la lista de director adjunto
     index:
-      deputy_directors: Directores Adjuntos
+      deputy_directors: Secretarías Adjuntos
       add_deputy_director: Agregar director adjunto
       name: Nombre
       division: División
-      status: estado
+      status: Estado
       edit: Editar
     new:
       add_deputy_director: Agregar director adjunto
@@ -189,7 +189,7 @@ es:
       name: Nombre
       email: Email
       division: División
-      status: estado
+      status: Estado
       edit: Editar
       return_to_deputy_director: Volver a la lista de director adjunto
   devise:
@@ -247,50 +247,50 @@ es:
         resend_unlock_instructions: Reenviar instrucciones de desbloqueo
   directorates:
     form:
-      status: estado
+      status: Estado
       inactive: INACTIVO
     edit:
-      edit_directorate: Editar junta administrativa
-      return_to_directorate_list: Volver a la lista de la junta administrativa
+      edit_directorate: Editar secretaría
+      return_to_directorate_list: Volver a la lista de la secretaría
     index:
-      directorates: Directores
-      add_directorate: Añadir directores
+      directorates: Secretarías
+      add_directorate: Añadir secretarías
       name: Nombre
-      status: estado
+      status: Estado
       edit: Editar
     new:
       new_directorate: Nuevo director
-      return_to_directorate_list: Volver a la lista de directores
+      return_to_directorate_list: Volver a la lista de secretarías
     show:
-      directorate_details: Directorate detalles
+      directorate_details: Detalles de la secretarías
       name: Nombre
-      status: estado
+      status: Estado
       edit: Editar
-      return_to_directorate_list: RVolver a la lista de directores
+      return_to_directorate_list: Volver a la lista de secretarías
   divisions:
     form:
-      status: estado
+      status: Estado
       inactive: INACTIVO
     edit:
       edit_division: Editar división
-      return_to_divisions_list: Volver a la lista de división
+      return_to_divisions_list: Volver a la lista de Subsecretarías
     index:
-      divisions: Divisiones
+      divisions: Subsecretarías
       add_division: Agregar división
       name: Nombre
-      directorate: Junta administrativa
-      status: estado
+      directorate: Secretaría
+      status: Estado
       edit: Editar
     new:
       new_division: nueva división
-      return_to_divisions: Volver a divisiones
+      return_to_divisions: Volver a Subsecretarías
     show:
       division_details: Detalles de la división
       name: Nombre
       directorate: Directorio
-      status: estado
+      status: Estado
       edit: Editar
-      return_to_divisions_list: Volver a la lista de divisiones
+      return_to_divisions_list: Volver a la lista de subsecretarías
   early_bird_dashboard:
     index:
       new_parliamentary_questions_to: Nuevas preguntas parlamentarias a asignarse
@@ -308,7 +308,7 @@ es:
       n_a: N/A
   early_bird_members:
     form:
-      status: estado
+      status: Estado
       inactive: INACTIVO
     edit:
       edit_early_bird_member: Editar miembro de reserva anticipada
@@ -321,7 +321,7 @@ es:
       early_bird_preview: vista previa de Early Bird
       name: Nombre
       email: Email
-      status: estado
+      status: Estado
       edit: Editar
     new:
       add_early_bird_member: Agregar miembro Early Bird
@@ -330,7 +330,7 @@ es:
       early_bird_member_details: detalles Early Bird miembro
       name: Nombre
       email: Email
-      status: estado
+      status: Estado
       edit: Editar
       return_to_early_bird: Volver a la lista de miembros de Early Bird
   export:
@@ -397,7 +397,7 @@ es:
       back: atrás
   ministers:
     form:
-      contact_status: estado de contacto
+      contact_status: Estado de contacto
       inactive: INACTIVO
     edit:
       edit_minister: Editar ministro
@@ -407,7 +407,7 @@ es:
       add_minister: Agregar ministro
       name: Nombre
       title: título
-      status: estado
+      status: Estado
       edit: Editar
     new:
       add_minister: Agregar ministro
@@ -416,7 +416,7 @@ es:
       minister_details: Detalles de ministro
       name: Nombre
       title: título
-      status: estado
+      status: Estado
       contacts: contactos
       add_new_contact: Agregar nuevo contacto
       description: Descripción
@@ -426,17 +426,17 @@ es:
       return_to_the_minister: Volver a la lista de ministros
   ogds:
     form:
-      status: estado
+      status: Estado
       inactive: INACTIVO
     edit:
       edit_government_department: Editar secretarias de despacho
       return_to_other_government: Regresar a otra lista de secretarias de despacho
     index:
-      other_government_departments: Otras secretarias de despacho
-      add_government_department: Agregar secretaria de despacho
+      other_government_departments: Entes descentralizados
+      add_government_department: Regresar a Entes descentralizados
       name: Nombre
       acronym: acrónimo
-      status: estado
+      status: Estado
       edit: Editar
     new:
       add_government_department: Agregar secretaria de despacho
@@ -445,7 +445,7 @@ es:
       government_department_details: Detalles de secretaria de despacho
       name: Nombre
       acronym: acrónimo
-      status: estado
+      status: Estado
       edit: Editar
       return_to_other_government: Regresar a otra lista de secretarias de despacho
   pqs:
@@ -517,11 +517,11 @@ es:
       edit_press_desk: Editar oficina de prensa
       return_to_press_desk: Volver a lista de oficina de prensa
     index:
-      press_desks: Press desks
+      press_desks: Oficinas de Prensa
       add_press_desk: Agregar press desk
       name: Nombre
       press_officers: Oficiales de prensa
-      status: estado
+      status: Estado
       edit: Editar
     new:
       add_press_desk: Añadir oficina de prensa
@@ -529,13 +529,13 @@ es:
     show:
       press_desk_details: Detalles Oficina de Prensa
       name: Nombre
-      status: estado
+      status: Estado
       press_officers: oficiales de prensa
       edit: Editar
       return_to_press_desk: Volver a lista de oficina de prensa
   press_officers:
     form:
-      status: estado
+      status: Estado
       inactive: INACTIVO
     edit:
       edit_press_officer: Editar oficial de prensa
@@ -545,7 +545,7 @@ es:
       add_press_officer: Agregar oficial de prensa
       name: Nombre
       press_desk: Oficina de Prensa
-      status: estado
+      status: Estado
       edit: Editar
     new:
       add_press_officer: Agregar oficial de prensa
@@ -554,7 +554,7 @@ es:
       press_officer_details: Detalles oficial de prensa
       name: Nombre
       email: Email
-      status: estado
+      status: Estado
       edit: Editar
       return_to_press_officer: Volver a la lista oficial de prensa
   preview:
@@ -672,7 +672,7 @@ es:
       name: Nombre
       role: Rol
       last_sign_in: Último inicio de sesión
-      status: estado
+      status: Estado
       never_active: Nunca activo
       edit: Editar
     invitations:
@@ -701,7 +701,7 @@ es:
       allocation: Asignación
   watchlist_members:
     form:
-      status: estado
+      status: Estado
       inactive: Inactivo
     edit:
       edit_watchlist_member: Editar miembro de la lista de vigilancia
@@ -714,7 +714,7 @@ es:
       watchlist_preview: Watchlist previsualizacion
       name: Nombre
       email: Email
-      status: estado
+      status: Estado
       edit: Editar
     new:
       add_watchlist_member: Agregar miembro de la lista de vigilancia
@@ -723,7 +723,7 @@ es:
       watchlist_member_details: Detalles miembros Lista de Vigilancia
       name: Nombre
       email: Email
-      status: estado
+      status: Estado
       edit: Editar
       return_to_watchlist_member: Volver a la lista de miembros de lista de observación
   unassigned: No Asignada

@@ -29,7 +29,7 @@ class TrimLink < ActiveRecord::Base
 
   def trim_file_format
     if file && !::Validators::Trim.valid_upload?(file)
-      errors.add(:file, 'Invalid file selected!')
+      errors.add(:file, 'archivo seleccionado no válido!')
     end
   end
 

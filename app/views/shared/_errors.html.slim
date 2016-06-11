@@ -2,7 +2,7 @@
 - errors = errors.errors
 - if errors.any?
   .pq-msg-error
-    = "#{pluralize(errors.count, "error")} prohibited this #{name} from being saved:"
+    = "#{pluralize(errors.count, "error")} prohibido para que esta #{name} se guarde:"
     ul
       - errors.full_messages.each do |msg|
         li= msg

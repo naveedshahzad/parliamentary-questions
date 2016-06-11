@@ -23,7 +23,7 @@ class PqsController < ApplicationController
           flash[:success] = 'Successfully updated'
         else
           @pq.trim_link(true)
-          flash[:error] = 'Update failed'
+          flash[:error] = 'Actualización Fallida'
         end
         set_dashboard_title
         render :show

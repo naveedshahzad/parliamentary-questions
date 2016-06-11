@@ -6,7 +6,7 @@
         label.form-label for="division_name" Nombre
         = f.text_field :name, {class: 'form-control'}
       .form-group
-        label.form-label for="division_directorate_id" Dirección
+        label.form-label for="division_directorate_id" Secretarías
         = f.collection_select(:directorate_id, @directorates, :id, :name, :include_blank => "Por favor seleccione")
       .form-group
         p.text= t('.status')

@@ -77,7 +77,7 @@ module PQState
     case state
     when UNASSIGNED        then 'No Asignada'#'Unassigned'
     when REJECTED          then 'Rejected'
-    when NO_RESPONSE       then 'No response'
+    when NO_RESPONSE       then 'Sin Respuesta' #'No response'
     when DRAFT_PENDING     then 'Draft Pending'
     when WITH_POD          then 'With POD'
     when POD_QUERY         then 'POD Query'
@@ -86,7 +86,7 @@ module PQState
     when MINISTERIAL_QUERY then 'Ministerial Query'
     when MINISTER_CLEARED  then 'Minister Cleared'
     when ANSWERED          then 'Answered'
-    when TRANSFERRED_OUT   then 'Transferred out'
+    when TRANSFERRED_OUT   then 'Trasladado' #'Transferred out'
     end
   end
 end
